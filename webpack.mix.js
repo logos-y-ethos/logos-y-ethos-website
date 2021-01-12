@@ -15,4 +15,6 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'pub
     require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
-]);
+])
+    .sass('resources/sass/website/index.scss', 'public/css/website.css')
+    .sass('resources/sass/admin/index.scss', 'public/css/admin.css');

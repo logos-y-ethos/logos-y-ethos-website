@@ -1,0 +1,53 @@
+@use '../../../base/colors';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background-color: colors.$background-dark-color;
+    color: colors.$text-light-color;
+
+    div {
+        padding: 10px;
+        text-align: center;
+    }
+
+    :nth-child(1) {
+        text-align: left;
+
+        a,
+        span {
+            display: flex;
+            align-items: center;
+            margin: 5px;
+            color: colors.$text-light-color;
+        }
+
+        svg {
+            width: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column-reverse;
+        padding: 10px 10px;
+
+        :nth-child(1) {
+            svg {
+                width: 30px;
+            }
+        }
+
+        :nth-child(3) {
+            a {
+                svg {
+                    width: 30px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

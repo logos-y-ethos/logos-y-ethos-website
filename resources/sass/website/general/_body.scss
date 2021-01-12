@@ -1,0 +1,8 @@
+@use '../../base/colors';
+@use '../../base/typography';
+
+body {
+    font-family: typography.$text-font;
+    font-size: 15px;
+    color: colors.$text-color;
+}

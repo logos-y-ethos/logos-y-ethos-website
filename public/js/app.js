@@ -21331,14 +21331,38 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/admin/index.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/admin/index.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/website/index.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/website/index.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
-  \***********************************************************/
+/*!*********************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/website/index.scss ./resources/sass/admin/index.scss ./resources/css/app.css ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\laragon\www\logos-y-ethos-website\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\laragon\www\logos-y-ethos-website\resources\sass\website\index.scss */"./resources/sass/website/index.scss");
+__webpack_require__(/*! C:\laragon\www\logos-y-ethos-website\resources\sass\admin\index.scss */"./resources/sass/admin/index.scss");
 module.exports = __webpack_require__(/*! C:\laragon\www\logos-y-ethos-website\resources\css\app.css */"./resources/css/app.css");
 
 

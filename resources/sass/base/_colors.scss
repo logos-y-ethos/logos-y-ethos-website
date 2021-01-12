@@ -1,0 +1,56 @@
+/*
+ * Colors
+ * Nombres de colores obtenidos de: https://chir.ag/projects/name-that-color/
+ */
+
+/* Colors */
+$_valhalla: #231852;
+$_lonestar: #660001;
+$_rose-fog: #e4c3ad;
+$_santas-gray: #9EA3B0;
+$_gallery: #EEEEEE;
+$_white: #FFFFFF;
+$_black: #000000;
+
+
+/* Website */
+
+$primary-color: $_valhalla;
+$secondary-color: $_lonestar;
+$alternate-color: $_rose-fog;
+
+$background-dark-color: $_black;
+$background-light-color: $_white;
+$background-section-color: $_gallery;
+
+$background-main-color: $_valhalla;
+$background-secondary-color: $_lonestar;
+$background-alternate-color: $_rose-fog;
+$background-gray-color: $_santas-gray;
+
+$text-color: $_black;
+$text-light-color: $_white;
+$text-highlight-color: $_lonestar;
+
+$border-color: $_santas-gray;
+
+
+/* Admin */
+
+$admin-primary-color: $_valhalla;
+$admin-secondary-color: $_lonestar;
+
+$admin-background-dark-color: $_black;
+$admin-background-light-color: $_white;
+$admin-background-section-color: $_gallery;
+
+$admin-background-main-color: $_valhalla;
+$admin-background-secondary-color: $_lonestar;
+$admin-background-gray-color: $_santas-gray;
+
+$admin-text-color: $_black;
+$admin-text-light-color: $_white;
+$admin-text-highlight-color: $_lonestar;
+
+$admin-border-color: $_valhalla;
+$admin-border-light-color: $_santas-gray;
