@@ -1,0 +1,40 @@
+@use '../../../base/colors';
+
+.collaborators-list {
+    min-height: calc(100vh - 470px);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+
+    padding-top: 15px;
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1;
+            color: colors.$text-highlight-color;
+            border-bottom: solid 5px colors.$background-alternate-color;
+        }
+
+        ul {
+            margin-top: 0px;
+            padding-left: 15px;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .collaborators-list {
+        min-height: calc(100vh - 510px);
+
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 70px;
+    }
+}

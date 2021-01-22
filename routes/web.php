@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CollaboratorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,20 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+
+/* ========================== Nosotros ========================== */
+
+Route::get('/nosotros', function () {
+    return view('website.us.who-we-are');
+});
+Route::get('/nosotros/secretarias', function () {
+    return view('website.us.secretaries');
+});
+Route::get('/nosotros/consejo-directivo', function () {
+    return view('website.us.board-of-directors');
+});
+Route::get('/nosotros/colaboradores-externos', [CollaboratorController::class, 'index']);
 
 require __DIR__.'/auth.php';
 

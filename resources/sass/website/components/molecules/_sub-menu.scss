@@ -1,0 +1,36 @@
+@use '../../../base/colors';
+@use '../../../base/typography';
+
+.sub-menu {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 150px;
+
+    font-family: typography.$headings-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+
+    background: colors.$background-main-color;
+
+    .item {
+        text-align: center;
+    }
+
+    a {
+        color: colors.$text-light-color;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sub-menu {
+        font-size: 15px;
+        line-height: 17px;
+        padding: 0;
+    }
+}
