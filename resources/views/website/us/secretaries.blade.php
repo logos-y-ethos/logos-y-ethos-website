@@ -1,6 +1,6 @@
 @extends('layouts.website')
 
-@section('title', '| ¿Quiénes somos?')
+@section('title', '| Secretarías')
 
 @section('nav')
 
@@ -65,7 +65,7 @@
                 </div>
                 <div class="photos">
                     <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Milagros Aubanel Lozano Ulloa.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -116,8 +116,8 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Alessandro Carlos Alfredo Reymundo Vilca.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/José Carlos Rosario Sánchez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -154,7 +154,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Emily Shantal Lozano Rodríguez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -204,7 +204,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Estefani Verde Rodríguez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -245,7 +245,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Maria Alexandra de los Milagros Vasquez Correa.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -285,7 +285,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Norvin Stalin Mostacero Cabrera.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -324,7 +324,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/María Helena de los Angeles Herrera Mendoza.jpg') }}" alt="">
                 </div>
             </div>
         </section>

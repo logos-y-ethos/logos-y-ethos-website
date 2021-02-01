@@ -402,10 +402,31 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans";
   font-size: 15px;
   color: #000000;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  height: 87px;
+  background-clip: content-box;
 }
 
 h1,
@@ -522,6 +543,7 @@ ul {
   font-weight: 600;
   background-color: #231852;
   display: flex;
+  position: relative;
   justify-content: flex-end;
   align-content: flex-end;
   align-items: center;
@@ -1034,6 +1056,219 @@ ul {
   }
 }
 
+.publications-container {
+  display: grid;
+  grid-template-columns: 3fr 11fr;
+  background-color: #EEEEEE;
+}
+
+.publications-container h1 {
+  font-size: 20px;
+}
+
+.publications-container .publicactions-aside {
+  max-height: calc(100vh - 70px + 250px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 10% 50px 10%;
+}
+
+.publications-container .publicactions-aside .card {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 27px 20px 27px;
+  margin-bottom: 10%;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.publications-container .publicactions-aside .card span {
+  font-size: 20px;
+}
+
+.publications-container .publicactions-aside .card a {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9ea3b0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+.publications-container .publicactions-aside .card a:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.publications-container .publicactions-aside::-webkit-scrollbar {
+  width: 14px;
+}
+
+.publications-container .publicactions-aside::-webkit-scrollbar-track {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.publications-container .publicactions-aside::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  height: 87px;
+  background-clip: content-box;
+}
+
+.publications-container .publications-view {
+  padding: 25px 5% 25px 5%;
+  background-color: #FFFFFF;
+}
+
+.publications-container .publications-view .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.publications-container .publications-view .title span:nth-child(1) {
+  color: #660001;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.publications-container .publications-view .title a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #660001;
+}
+
+.publications-container .publications-view .pdfobject-container {
+  height: calc(100vh - 150px);
+}
+
+.publications-container .publications-view .embed-pdf {
+  display: none;
+}
+
+.publications-container .publications-view .info {
+  min-height: 240px;
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 15px;
+}
+
+.publications-container .publications-view .info .about {
+  min-width: 140px;
+  text-align: center;
+  color: #660001;
+}
+
+.publications-container .publications-view .info .about span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.publications-container .publications-view .info .description {
+  padding-left: 15px;
+}
+
+.publications-container .publications-view .info .description p {
+  margin-top: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .publications-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .publications-container h1 {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    top: 0px;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+  }
+
+  .publications-container .publicactions-aside {
+    height: 250px;
+    padding: 65px 10px 5px 10px;
+    flex-direction: row;
+  }
+
+  .publications-container .publicactions-aside .card {
+    max-height: 160px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    padding: 10px 0px 0px 0px;
+    font-size: 10px;
+  }
+
+  .publications-container .publicactions-aside .card span {
+    margin: 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .publications-container .publicactions-aside .card img {
+    margin: 0 8px;
+    max-width: 80px;
+  }
+
+  .publications-container .publicactions-aside .card a {
+    width: 100%;
+    height: 25px;
+    border-radius: 0px;
+  }
+
+  .publications-container .publications-view .pdfobject-container {
+    display: none;
+  }
+
+  .publications-container .publications-view .embed-pdf {
+    display: block;
+  }
+
+  .publications-container .publications-view .info {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .publications-container .publications-view .info .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publications-container .publications-view .info .description {
+    padding-left: 0;
+  }
+
+  .publications-container .publications-view .info .description p {
+    margin-top: 0;
+    text-align: justify;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
@@ -1093,4 +1328,16 @@ ul {
     └── index.scss
 
  */
+
+/* ***************** Settings ***************** */
+
+/* ***************** Tools ***************** */
+
+/* ***************** Generic ***************** */
+
+/* ***************** Elements ***************** */
+
+/* ***************** Components ***************** */
+
+/* ***************** Utilities ***************** */
 

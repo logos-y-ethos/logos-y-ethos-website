@@ -1,6 +1,6 @@
 @extends('layouts.website')
 
-@section('title', '| ¿Quiénes somos?')
+@section('title', '| Colaboradores externos')
 
 @section('nav')
 

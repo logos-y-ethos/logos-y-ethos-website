@@ -38,4 +38,17 @@ Route::get('/nosotros/colaboradores-externos', [CollaboratorController::class, '
 
 require __DIR__.'/auth.php';
 
+/* ========================== Publicaciones ========================== */
+
+Route::get('/publicaciones', function () {
+    return view('website.publications');
+});
+
+/* ========================== Contacto ========================== */
+
+Route::get('/contacto', function () {
+    return view('website.contact');
+});
+
+
 // ༼つ◕_◕༽つ Have happy coding!!

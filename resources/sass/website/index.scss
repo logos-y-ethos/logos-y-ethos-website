@@ -36,17 +36,17 @@
 
  */
 
-// Settings
+/* ***************** Settings ***************** */
 @use '../base/colors';
 @use '../base/typography';
 
-// Tools
+/* ***************** Tools ***************** */
 
-// Generic
+/* ***************** Generic ***************** */
 @use '../base/normalize';
 @use '../base/box-sizing';
 
-// Elements
+/* ***************** Elements ***************** */
 @use 'general/body.scss';
 @use 'general/headings.scss';
 @use 'general/images.scss';
@@ -56,7 +56,8 @@
 //Objects
 @use 'general/containers';
 
-// Components
+/* ***************** Components ***************** */
+// Us
 @use 'components/molecules/sub-menu';
 @use 'components/organisms/nav';
 @use 'components/organisms/footer';
@@ -64,7 +65,10 @@
 @use 'components/organisms/us-collaborators';
 @use 'components/organisms/us-directors';
 @use 'components/organisms/us-secretaries';
+// Publicationa
+@use 'components/organisms/publications';
+// Login
+// @use 'components/organisms/login';
 
-// Utilities
-
+/* ***************** Utilities ***************** */
 @use 'utilities/hidden'

@@ -1,0 +1,19 @@
+.login-container{
+    height: calc(100vh - 131.4px);
+}
+.login-background {
+    // background-image: url('../../../../../public/images/login-bg.png');
+    height: 100%;
+    float: left;
+    overflow: hidden;
+
+    img{
+        height: 100%;
+
+    }
+}
+
+.login-form{
+    width: auto;
+    overflow: hidden;
+}
