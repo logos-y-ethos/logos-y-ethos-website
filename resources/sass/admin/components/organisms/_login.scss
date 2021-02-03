@@ -1,0 +1,148 @@
+@use '../../../base/colors';
+@use '../../../base/typography';
+
+.login-container {
+    height: calc(100vh - 131.4px);
+}
+
+.login-background {
+    // background-image: url('../../../../../public/images/login-bg.png');
+    height: 100%;
+    float: left;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+    }
+}
+
+.login-form {
+    width: auto;
+    height: calc(100vh - 131.4px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    header {
+        p {
+            font-family: typography.$headings-font;
+            margin-bottom: 0;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        img {
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            background-color: colors.$background-light-color;
+        }
+    }
+
+    section {
+        padding: 40px 75px;
+        background-color: colors.$background-main-color;
+        color: colors.$text-light-color;
+        text-align: left;
+        border-radius: 5px;
+
+        input {
+            margin: 0 0 15px 10px;
+            padding: 0.25em 0.5em;
+            font-size: 16px;
+            font-size: max(16px, 1em);
+            font-family: inherit;
+            background: none;
+            color: colors.$text-light-color;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid white;
+            // border-radius: 4px;
+            outline: none;
+            transition: 180ms box-shadow ease-in-out;
+
+            &:not(textarea):not([type="checkbox"]) {
+                line-height: 1;
+                height: 2.25rem;
+            }
+            &[type="file"] {
+                font-size: 0.9em;
+                padding-top: 0.35rem;
+            }
+            &[readonly] {
+                border-style: dotted;
+                cursor: not-allowed;
+                color: #777;
+            }
+            &[disabled] {
+                --input-border: #ccc;
+
+                background-color: #eee;
+                cursor: not-allowed;
+            }
+            &:focus {
+                border-radius: 4px;
+                border: 2px solid white;
+                // border: none;
+                box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+                outline: 3px solid transparent;
+            }
+        }
+        textarea.input {
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            height: 2.25rem;
+            margin-top: 15px;
+            background-color: colors.$background-gray-color;
+            color: colors.$text-light-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login-container {
+        height: calc(100vh - 84.8px);
+        background-image: url("../../../../../public/images/login-bg.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .login-background {
+        position: absolute;
+        top: 0;
+        // height: 100%;
+        width: 100%;
+        height: calc(100vh - 84.8px);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        img {
+            display: none;
+        }
+    }
+    .login-form {
+        position: relative;
+        z-index: 100;
+
+        header {
+            color: colors.$text-light-color;
+        }
+        section {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+}

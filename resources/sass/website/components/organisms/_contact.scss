@@ -1,0 +1,76 @@
+@use '../../../base/colors';
+@use '../../../base/typography';
+
+.contact-section {
+    padding: 2.5% 10%;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 25px;
+    align-items: center;
+    background-color: colors.$background-section-color;
+
+    img {
+        width: 100%;
+    }
+
+    .section-right {
+        .social {
+            font-family: typography.$headings-font;
+            font-size: 25px;
+            color: colors.$text-highlight-color;
+            line-height: 1;
+
+            a:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+        .info {
+            text-align: right;
+            font-weight: 600;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-weight: 400;
+                color: colors.$text-color;
+                text-decoration: underline;
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.contact-social-embeds {
+    min-height: 300px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-section {
+        padding: 10% 10%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+
+        img {
+            display: none;
+        }
+
+        .section-right {
+            text-align: center;
+            .social {
+                margin-bottom: 40px;
+            }
+            .info {
+                text-align: center;
+                a {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

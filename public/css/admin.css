@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+/*
+ * Colors
+ * Nombres de colores obtenidos de: https://chir.ag/projects/name-that-color/
+ */
+
+/* Colors */
+
+/* Website */
+
+/* Admin */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -391,6 +402,307 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #000000;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  height: 87px;
+  background-clip: content-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "EB Garamond";
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: #660001;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+}
+
+.login-container {
+  height: calc(100vh - 131.4px);
+}
+
+.login-background {
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.login-background img {
+  height: 100%;
+}
+
+.login-form {
+  width: auto;
+  height: calc(100vh - 131.4px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-form header p {
+  font-family: "EB Garamond";
+  margin-bottom: 0;
+}
+
+.login-form header h1 {
+  margin-top: 0;
+}
+
+.login-form header img {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.login-form section {
+  padding: 40px 75px;
+  background-color: #231852;
+  color: #FFFFFF;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.login-form section input {
+  margin: 0 0 15px 10px;
+  padding: 0.25em 0.5em;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  background: none;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+.login-form section input:not(textarea):not([type=checkbox]) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+.login-form section input[type=file] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+.login-form section input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.login-form section input[disabled] {
+  --input-border: #ccc;
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.login-form section input:focus {
+  border-radius: 4px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+  outline: 3px solid transparent;
+}
+
+.login-form section textarea.input {
+  resize: vertical;
+}
+
+.login-form section button {
+  width: 100%;
+  height: 2.25rem;
+  margin-top: 15px;
+  background-color: #9EA3B0;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.login-form section button:focus {
+  outline: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    height: calc(100vh - 84.8px);
+    background-image: url(/images/login-bg.png?1b5927561ff9ffbaf5448d55783d29e6);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .login-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 84.8px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+  .login-background img {
+    display: none;
+  }
+
+  .login-form {
+    position: relative;
+    z-index: 100;
+  }
+
+  .login-form header {
+    color: #FFFFFF;
+  }
+
+  .login-form section {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.footer div {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer :nth-child(1) {
+  text-align: left;
+}
+
+.footer :nth-child(1) a,
+.footer :nth-child(1) span {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  color: #FFFFFF;
+}
+
+.footer :nth-child(1) svg {
+  width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    padding: 10px 10px;
+  }
+
+  .footer :nth-child(1) svg {
+    width: 30px;
+  }
+
+  .footer :nth-child(3) a svg {
+    width: 30px;
+    margin: 0 5px;
+  }
+}
+
+.center {
+  text-align: center !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
 /*
 
     ├── base
@@ -428,4 +740,18 @@ html {
     └── index.scss
 
  */
+
+/* ***************** Settings ***************** */
+
+/* ***************** Tools ***************** */
+
+/* ***************** Generic ***************** */
+
+/* ***************** Elements ***************** */
+
+/* ***************** Components ***************** */
+
+/* ***************** Components ***************** */
+
+/* ***************** Utilities ***************** */
 

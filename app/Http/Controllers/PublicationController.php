@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Collaborator;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class CollaboratorController extends Controller
+class PublicationController extends Controller
 {
     /**
      * Display a listing of the resource.

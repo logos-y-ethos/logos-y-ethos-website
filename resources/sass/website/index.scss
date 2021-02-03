@@ -57,18 +57,18 @@
 @use 'general/containers';
 
 /* ***************** Components ***************** */
-// Us
-@use 'components/molecules/sub-menu';
 @use 'components/organisms/nav';
 @use 'components/organisms/footer';
+// Us
+@use 'components/molecules/sub-menu';
 @use 'components/organisms/us';
 @use 'components/organisms/us-collaborators';
 @use 'components/organisms/us-directors';
 @use 'components/organisms/us-secretaries';
-// Publicationa
+// Publications
 @use 'components/organisms/publications';
-// Login
-// @use 'components/organisms/login';
+// Contact
+@use 'components/organisms/contact';
 
 /* ***************** Utilities ***************** */
 @use 'utilities/hidden'

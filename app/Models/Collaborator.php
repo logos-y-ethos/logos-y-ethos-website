@@ -12,8 +12,16 @@ class Collaborator extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name',
-        'last_name',
+        'code',
+        'title',
+        'cover',
+        'date',
+        'author',
+        'description',
+        'type',
+        'file',
+        'url',
+        'number_pages',
     ];
 
     protected $hidden = [

@@ -505,38 +505,6 @@ ul {
   }
 }
 
-.sub-menu {
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 150px;
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 22px;
-  background: #231852;
-}
-
-.sub-menu .item {
-  text-align: center;
-}
-
-.sub-menu a {
-  color: #FFFFFF;
-}
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
-  .sub-menu {
-    font-size: 15px;
-    line-height: 17px;
-    padding: 0;
-  }
-}
-
 .nav {
   font-variant-caps: all-small-caps;
   font-size: 20px;
@@ -722,6 +690,38 @@ ul {
   .footer :nth-child(3) a svg {
     width: 30px;
     margin: 0 5px;
+  }
+}
+
+.sub-menu {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  background: #231852;
+}
+
+.sub-menu .item {
+  text-align: center;
+}
+
+.sub-menu a {
+  color: #FFFFFF;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .sub-menu {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 0;
   }
 }
 
@@ -1060,6 +1060,7 @@ ul {
   display: grid;
   grid-template-columns: 3fr 11fr;
   background-color: #EEEEEE;
+  min-height: 80vh;
 }
 
 .publications-container h1 {
@@ -1266,6 +1267,83 @@ ul {
   .publications-container .publications-view .info .description p {
     margin-top: 0;
     text-align: justify;
+  }
+}
+
+.contact-section {
+  padding: 2.5% 10%;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 25px;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.contact-section img {
+  width: 100%;
+}
+
+.contact-section .section-right .social {
+  font-family: "EB Garamond";
+  font-size: 25px;
+  color: #660001;
+  line-height: 1;
+}
+
+.contact-section .section-right .social a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.contact-section .section-right .info {
+  text-align: right;
+  font-weight: 600;
+}
+
+.contact-section .section-right .info a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.contact-section .section-right .info a svg {
+  margin-right: 10px;
+}
+
+.contact-social-embeds {
+  min-height: 300px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    padding: 10% 10%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .contact-section img {
+    display: none;
+  }
+
+  .contact-section .section-right {
+    text-align: center;
+  }
+
+  .contact-section .section-right .social {
+    margin-bottom: 40px;
+  }
+
+  .contact-section .section-right .info {
+    text-align: center;
+  }
+
+  .contact-section .section-right .info a {
+    justify-content: center;
   }
 }
 
