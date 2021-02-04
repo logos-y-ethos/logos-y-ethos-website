@@ -48,19 +48,24 @@
 
 /* ***************** Elements ***************** */
 @use 'general/body';
-@use 'general/headings.scss';
+@use 'general/headings';
+@use 'general/admin-content-container';
 // @use 'general/images.scss';
 // @use 'general/links.scss';
 // @use 'general/lists.scss';
 
 
 /* ***************** Components ***************** */
+@use 'components/organisms/nav';
+@use 'components/organisms/side-bar';
+@use 'components/organisms/title-bar';
 
 // Login
 @use 'components/organisms/login';
-
-/* ***************** Components ***************** */
 @use '../website/components/organisms/footer';
+// Dashboard
+@use 'components/organisms/dashboard';
+@use 'components/molecules/social-box';
 
 /* ***************** Utilities ***************** */
 @use 'utilities/align';

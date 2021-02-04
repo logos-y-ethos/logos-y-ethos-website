@@ -78,19 +78,19 @@
                     </div>
 
                     <!-- Remember Me -->
-                    <div class="block mt-4">
+                    <div class="block mt-4 remember-me">
                         <label for="remember_me" class="inline-flex items-center">
                             <input id="remember_me" type="checkbox"
                                 class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                 name="remember">
-                            <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                            <span class="ml-2 text-sm text-gray-600">Recordarme</span>
                         </label>
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
 
                         <x-button class="ml-3">
-                            {{ __('Login') }}
+                            INICIAR SESIÓN
                         </x-button>
                     </div>
                 </form>
@@ -104,8 +104,8 @@
     <div class="hidden-xs">
         @include('../website/components/footer')
     </div>
-    <footer class="footer hidden-sm center">
-        <div>
+    <footer class="footer hidden-sm">
+        <div class="text-center">
             C.E. Logos y Ethos <br />
             Todos los derechos reservados © <br class="hidden-xs" />
             2020

@@ -942,7 +942,7 @@ ul {
 }
 
 .secretaries-list .collapsible:after {
-  content: url(/images/chevron_duo_right.svg?9dc725ceaf8d2f9bc9088ddc7e70786a);
+  content: url("/images/us/chevron_duo_right.svg");
   color: white;
   font-weight: bold;
   float: right;
@@ -961,7 +961,7 @@ ul {
 }
 
 .secretaries-list .active:after {
-  content: url(/images/chevron_duo_down.svg?a531590b893e5a59871964e4eb402330);
+  content: url("/images/us/chevron_duo_down.svg");
 }
 
 .secretaries-list .content {
