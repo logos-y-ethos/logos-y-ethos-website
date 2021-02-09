@@ -64,7 +64,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/us/Xiomara Carolina Roncal Cueva.jpg') }}" alt="">
                     <img src="{{ asset('images/us/Milagros Aubanel Lozano Ulloa.jpg') }}" alt="">
                 </div>
             </div>
