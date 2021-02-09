@@ -48,7 +48,7 @@
 
         <div class="directors-list-item">
             <h3>TESORERA</h3>
-            <img src="{{ asset('images/us/Mercedes Liliana Polo González.jpg') }}" alt="">
+            <img src="{{ asset('images/us/Mercedes Liliana Polo Gonzalez.jpg') }}" alt="">
             <b>Mercedes Liliana Polo Gonzalez</b>
             <a href="mailto:mlpolog@unitru.edu.pe">mlpolog@unitru.edu.pe</a>
             <p>

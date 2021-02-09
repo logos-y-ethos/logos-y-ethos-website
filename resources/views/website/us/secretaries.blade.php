@@ -117,7 +117,7 @@
                 </div>
                 <div class="photos">
                     <img src="{{ asset('images/us/Alessandro Carlos Alfredo Reymundo Vilca.jpg') }}" alt="">
-                    <img src="{{ asset('images/us/José Carlos Rosario Sánchez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Jose Carlos Rosario Sanchez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -154,7 +154,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Emily Shantal Lozano Rodríguez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Emily Shantal Lozano Rodriguez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -204,7 +204,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Estefani Verde Rodríguez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Estefani Verde Rodriguez.jpg') }}" alt="">
                 </div>
             </div>
         </section>
@@ -324,7 +324,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/María Helena de los Angeles Herrera Mendoza.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Maria Helena de los Angeles Herrera Mendoza.jpg') }}" alt="">
                 </div>
             </div>
         </section>
