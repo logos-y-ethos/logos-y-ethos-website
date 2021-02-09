@@ -484,9 +484,7 @@ h4 {
 }
 
 .nav {
-  font-variant-caps: all-small-caps;
-  font-size: 20px;
-  font-weight: 600;
+  font-style: italic;
   background-color: #9EA3B0;
   display: flex;
   position: relative;
@@ -509,6 +507,8 @@ h4 {
   padding: 15px;
   transition: background-color 0.2s, color 0.2s;
   transition-timing-function: ease-in-out;
+  text-decoration: none;
+  text-transform: initial;
 }
 
 .nav a:first-child {
@@ -530,11 +530,6 @@ h4 {
 
 .nav a:hover:first-child img {
   transform: scale(1.05);
-}
-
-.nav a:hover:not(:first-child):not(:last-child) {
-  background-color: white;
-  color: black;
 }
 
 .nav a.active {
@@ -632,9 +627,50 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 25px;
   padding-top: 5%;
   background-color: #231852;
+  transition: width 0.15s;
+  transition-timing-function: ease-out;
+}
+
+.side-bar > a,
+.side-bar form {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.side-bar > a:hover,
+.side-bar form:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+}
+
+.side-bar > a.active,
+.side-bar form.active {
+  border-left: solid white 5px;
+}
+
+.side-bar > a span,
+.side-bar form span {
+  color: #FFFFFF;
+  display: none;
+}
+
+.side-bar:hover a {
+  display: flex;
+  align-items: flex-end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding-left: 15px;
+}
+
+.side-bar:hover span {
+  display: block;
+}
+
+.side-bar:hover {
+  width: 300px;
 }
 
 .login-container {

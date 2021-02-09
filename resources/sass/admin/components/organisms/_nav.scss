@@ -1,9 +1,7 @@
 @use '../../../base/colors';
 
 .nav {
-    font-variant-caps: all-small-caps;
-    font-size: 20px;
-    font-weight: 600;
+    font-style: italic;
     background-color: colors.$background-gray-color;
     // position: fixed;
     display: flex;
@@ -27,6 +25,8 @@
     padding: 15px;
     transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
+    text-decoration: none;
+    text-transform: initial;
 }
 
 .nav a:first-child {
@@ -48,11 +48,6 @@
 
 .nav a:hover:first-child img {
     transform: scale(1.05);
-}
-
-.nav a:hover:not(:first-child):not(:last-child) {
-    background-color: white;
-    color: black;
 }
 
 .nav a.active {
