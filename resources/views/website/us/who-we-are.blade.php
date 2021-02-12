@@ -28,9 +28,9 @@
                     Escuela de Derecho de la Universidad Nacional de Trujillo.
                 </p>
                 <p>
-                    Nuestro objetivo es encontrar innovadoras soluciones a los conflictos quesurgen en la sociedad, mediante
-                    el desarrollo de la investigación y la producción científico-jurídica que nos permitaprofundizar en
-                    ellos y adecuar el ordenamiento jurídico a las transformaciones y cambios sociales.
+                    Nuestro objetivo es encontrar innovadoras soluciones a los conflictos que surgen en la sociedad,
+                    mediante el desarrollo de la investigación y la producción científico-jurídica que nos permita
+                    profundizar en ellos y adecuar el ordenamiento jurídico a las transformaciones y cambios sociales.
                 <p>
             </div>
         </section>
@@ -41,20 +41,21 @@
 
         <div class="item">
             <h3>
-                <span>MISIÓN</span></h3>
+                <span>MISIÓN</span>
+            </h3>
             <img src="{{ asset('images/us/us-2.png') }}" alt="">
             <p>
-                Contribuir al desarrollo académico de la comunidad jurídica, liderando la investigación científica
-                con ética y calidad en las distintas áreas del derecho. Así también, promover el crecimiento
-                personal y profesional de nuestros asociados.
+                Contribuir al desarrollo académico de la comunidad jurídica, liderando la investigación científica con ética
+                y calidad en las distintas áreas del derecho. Así también, promover el crecimiento personal y profesional de
+                nuestros asociados.
             </p>
         </div>
         <div class="item">
             <h3><span>VISIÓN</span></h3>
             <img src="{{ asset('images/us/us-2.png') }}" alt="">
             <p>
-                Ser el mayor referente académico en investigación jurídica y producción de textos científicos,
-                además de contribuir al desarrollo integral de nuestros asociados.
+                Ser el mayor referente académico en investigación jurídica y producción de textos científicos, además de
+                contribuir al desarrollo integral de nuestros asociados.
             </p>
         </div>
 
@@ -66,7 +67,7 @@
 
         <section class="section-text">
             <p>
-                En el contexto de la pandemia de la covid-19 y atravesando una profunda crisis política, los estudiantes de
+                En el contexto de la pandemia de la Covid-19 y atravesando una profunda crisis política, los estudiantes de
                 la Escuela de Derecho de la Universidad Nacional de Trujillo, quienes se encuentran comprometidos con su
                 responsabilidad social y el fortalecimiento del Estado de Derecho, son conscientes que no puede existir
                 democracia sin ciencia.
@@ -90,8 +91,8 @@
                     Paredes y Xiomara Roncal Cueva, junto a Brayan Linares Oyos, Mercedes Polo Gonzales, Alessandro Reymundo
                     Vilca, José Carlos Rosario Sánchez, Milagros Aubanel Lozano Ulloa, María Helena Herrera Mendoza, María
                     Alexandra Vásquez Correa, Norvin Mostacero Cabrera, Emily Lozano Rodríguez y Estefani Verde Rodríguez,
-                    además, contando con la guía del Dr. Rafael Aldave Herrera, se embarcan en el proyecto nominado Círculo
-                    de Estudios Logos y Ethos.
+                    además, contando con la guía de la Dra. Victoria Mendoza Otiniano, se embarcan en el proyecto nominado
+                    Círculo de Estudios Logos y Ethos.
                 </p>
             </div>
         </section>
@@ -106,9 +107,9 @@
                     estos a través de la revista jurídica de la asociación.
                 </p>
                 <p>
-                    Hoy en día, aún queda un largo camino por recorrer, así, el Círculo de Estudios Logos y Ethos se
-                    encuentra comprometido a seguir trabajando ardua y disciplinadamente para alcanzar sus fines y objetivos
-                    con éxito.
+                    Hoy en día, aún queda un largo camino por recorrer, así, la Asociación Círculo de Estudios Logos y Ethos
+                    se encuentra comprometida a seguir trabajando ardua y disciplinadamente para alcanzar sus fines y
+                    objetivos con éxito.
                 </p>
             </div>
 

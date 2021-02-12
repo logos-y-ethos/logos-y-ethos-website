@@ -1,5 +1,5 @@
 <nav class="nav" id="nav">
-    <a href="#">
+    <a href="{{ url('/') }}"" target="_blank" rel="noopener noreferrer">
         <img src="{{ asset('images/logos-y-ethos-logo.png') }}" alt="">
     </a>
     <a href="#">Diana Asto</a>

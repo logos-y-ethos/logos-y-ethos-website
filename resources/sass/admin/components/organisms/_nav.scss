@@ -5,7 +5,7 @@
     background-color: colors.$background-gray-color;
     // position: fixed;
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: flex-end;
     align-content: flex-end;
     align-items: center;
@@ -22,7 +22,7 @@
     align-items: center;
     height: 70px;
     color: colors.$text-light-color;
-    padding: 15px;
+    padding-left: 15px;
     transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
     text-decoration: none;

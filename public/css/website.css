@@ -648,8 +648,8 @@ ul {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 10px 70px;
   background-color: #000000;
@@ -815,7 +815,7 @@ ul {
 }
 
 .collaborators-list {
-  min-height: calc(100vh - 470px);
+  min-height: calc(50vh - 235px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: -webkit-min-content;

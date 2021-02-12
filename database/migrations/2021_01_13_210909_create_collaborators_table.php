@@ -17,6 +17,7 @@ class CreateCollaboratorsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('last_name');
+            $table->string('type');
             $table->timestamps();
             $table->softDeletes();
         });

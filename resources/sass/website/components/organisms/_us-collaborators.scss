@@ -1,7 +1,7 @@
 @use '../../../base/colors';
 
 .collaborators-list {
-    min-height: calc(100vh - 470px);
+    min-height: calc(50vh - 235px);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);

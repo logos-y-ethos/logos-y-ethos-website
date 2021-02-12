@@ -1,5 +1,5 @@
 <nav class="nav" id="nav">
-    <a href="#">
+    <a href="{{ url('/') }}">
         <img src="{{ asset('images/logos-y-ethos-logo.png') }}" alt="">
     </a>
     <a href={{ url('/') }} class={{ $active === 'inicio' ? 'active' : 'false' }}>INICIO </a>

@@ -35,6 +35,7 @@
         </div>
 
         <div class="login-form">
+
             <header>
                 <img src="{{ asset('images/logos-y-ethos-logo.png') }}" alt="">
                 <p>CÍRCULO DE ESTUDIOS</p>
@@ -42,10 +43,10 @@
             </header>
 
             <!-- Session Status -->
-            <x-auth-session-status class="mb-4" :status="session('status')" />
+            <x-auth-session-status class="messages" :status="session('status')" />
 
             <!-- Validation Errors -->
-            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+            <x-auth-validation-errors class="messages" :errors="$errors" />
 
             <section>
                 <form method="POST" action="{{ route('login') }}">
@@ -97,20 +98,15 @@
             </section>
         </div>
 
-
+        <footer class="footer">
+            <div class="text-center">
+                A.C.E. Logos y Ethos <br />
+                Todos los derechos reservados © <br class="hidden-xs" />
+                2020
+            </div>
+        </footer>
 
     </div>
-
-    <div class="hidden-xs">
-        @include('../website/components/footer')
-    </div>
-    <footer class="footer hidden-sm">
-        <div class="text-center">
-            C.E. Logos y Ethos <br />
-            Todos los derechos reservados © <br class="hidden-xs" />
-            2020
-        </div>
-    </footer>
 
     @yield('scripts')
 </body>

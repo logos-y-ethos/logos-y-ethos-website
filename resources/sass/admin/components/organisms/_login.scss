@@ -2,23 +2,23 @@
 @use '../../../base/typography';
 
 .login-container {
-    height: calc(100vh - 131.4px);
+    height: 100vh;
 }
 
 .login-background {
     // background-image: url('../../../../../public/images/login-bg.png');
-    height: 100%;
+    height: 100vh;
     float: left;
     overflow: hidden;
 
     img {
-        height: 100%;
+        height: 100vh;
     }
 }
 
 .login-form {
     width: auto;
-    height: calc(100vh - 131.4px);
+    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -93,13 +93,13 @@
         textarea.input {
             resize: vertical;
         }
-        .remember-me{
+        .remember-me {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
 
-            input{
+            input {
                 padding: 0;
                 margin: 15px 0 15px 0;
             }
@@ -124,10 +124,17 @@
     }
 }
 
+.footer {
+    width: 100%;
+    padding: 15px;
+    background-color: colors.$background-dark-color;
+    color: colors.$text-light-color;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .login-container {
-        height: calc(100vh - 84.8px);
+        height: 100vh;
         background-image: url("/images/login-bg.png");
         background-size: cover;
         background-position: center;
@@ -137,7 +144,7 @@
         top: 0;
         // height: 100%;
         width: 100%;
-        height: calc(100vh - 84.8px);
+        height: calc(100vh - 0);
         background: rgba(0, 0, 0, 0.5);
         z-index: 10;
         img {
@@ -148,7 +155,7 @@
         position: relative;
         z-index: 100;
 
-        header {
+        header, .messages {
             color: colors.$text-light-color;
         }
         section {

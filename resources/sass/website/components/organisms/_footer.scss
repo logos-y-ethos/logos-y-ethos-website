@@ -1,8 +1,8 @@
 @use '../../../base/colors';
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 10px 70px;
     background-color: colors.$background-dark-color;

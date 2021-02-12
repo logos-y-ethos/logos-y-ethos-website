@@ -40,7 +40,7 @@
                     </article>
                     <article>
                         <p>
-                            La Secretaria de Eventos Académicos de la Asociación Circulo de Estudios “Logos y Ethos”, es la
+                            La Secretaría de Eventos Académicos de la Asociación Circulo de Estudios “Logos y Ethos”, es la
                             encargada de celebrar los distintos eventos académicos que contribuyan a la formación
                             profesional y personal de la comunidad universitaria jurídica. Tiene como objetivo establecer la
                             interacción entre esta y el círculo de estudios, respondiendo a sus necesidades académicas; en
@@ -55,7 +55,7 @@
                     <article>
                         <b>Perfil de sus integrantes</b>
                         <p>
-                            La Secretaria de “Eventos Académicos” precisa que sus miembros posean habilidades de
+                            La Secretaría de “Eventos Académicos” precisa que sus miembros posean habilidades de
                             comunicación escrita y verbal, de negociación, de investigación, así también, habilidad numérica
                             para trabajar con los presupuestos, destreza para la gestión de proyectos y con las tecnologías
                             de la información y la comunicación (TIC), por último, resistencia para trabajar durante
@@ -147,7 +147,7 @@
                     <article>
                         <b>Perfil de sus integrantes</b>
                         <p>
-                            Esta secretaria busca que nuestros colaboradores sean personas comprometidas y apasionadas por
+                            Esta secretaría busca que nuestros colaboradores sean personas comprometidas y apasionadas por
                             la Investigación Jurídica, que tengan curiosidad por resolver grandes problemas relacionadas al
                             Derecho. Asimismo, tengan capacidad de síntesis y organización.
                         </p>
@@ -223,7 +223,7 @@
                     </article>
                     <article>
                         <p>
-                            La Secretaria de Ética Institucional tiene como objetivo asegurar el compromiso ético de la
+                            La Secretaría de Ética Institucional tiene como objetivo asegurar el compromiso ético de la
                             producción jurídico científica de la asociación, así como fiscalizar las actividades de las
                             demás secretarías, amparados bajo el principio de la ética institucional y difusión de la
                             verdad.
@@ -298,7 +298,7 @@
                     <article class="members">
                         <p>
                             <b>Secretaria General: </b>
-                            <i>María Helena de los Angeles Herrera Mendoza</i>
+                            <i>María Helena de los Ángeles Herrera Mendoza</i>
                             <a href="mailto:maherreram@unitru.edu.pe">maherreram@unitru.edu.pe</a>
                         </p>
                     </article>

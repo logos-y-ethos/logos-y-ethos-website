@@ -16,7 +16,7 @@
 
     @include('website.components.sub-menu')
 
-    <h2>Colaboradores Externos</h2>
+    <h2>Consejo Directivo</h2>
 
     <section class="us-container directors-list">
 

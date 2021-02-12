@@ -34,7 +34,7 @@ Route::get('/nosotros/secretarias', function () {
 Route::get('/nosotros/consejo-directivo', function () {
     return view('website.us.board-of-directors');
 });
-Route::get('/nosotros/colaboradores-externos', [WebsiteController::class, 'getCollaborators']);
+Route::get('/nosotros/colaboradores', [WebsiteController::class, 'getCollaborators']);
 
 require __DIR__.'/auth.php';
 

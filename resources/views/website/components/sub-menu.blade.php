@@ -9,6 +9,6 @@
         <a href={{ url('/nosotros/consejo-directivo') }}>Consejo Directivo</a>
     </div>
     <div class="item">
-        <a href={{ url('/nosotros/colaboradores-externos') }}>Colaboradores Externos</a>
+        <a href={{ url('/nosotros/colaboradores') }}>Colaboradores</a>
     </div>
 </div>
