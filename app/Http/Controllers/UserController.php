@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\Publication;
 
-class PublicationController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,10 @@ class PublicationController extends Controller
      */
     public function index()
     {
-        $publications = Publication::get();
+        $users = User::get();
 
-        return response()->view('admin.publications.index', ['publications' => $publications ]);
+        return response()->view('admin.users.index', ['users' => $users ]);
+
     }
 
     /**

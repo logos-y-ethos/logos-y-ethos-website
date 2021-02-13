@@ -9,7 +9,7 @@
     <meta name="description" content="Sitio web de administración del Círculo de Estudios de Estudios Logos y Ethos" />
     <meta name="keywords" content="circulo estudios logos ethos, circulo estudios derecho">
 
-    <title>Logos y Ethos @yield('title')</title>
+    <title>ACELE Admin | @yield('title')</title>
 
     <!-- Icon -->
     <link rel="shortcut icon" href="{{ asset('images/favicons/favicon-16x16.png') }}" type="image/x-icon">

@@ -37,20 +37,28 @@ $border-color: $_santas-gray;
 
 /* Admin */
 
-$admin-primary-color: $_valhalla;
-$admin-secondary-color: $_lonestar;
+$_green: #008000;
+$_orange: #FFA500;
+$_red: #FF0000;
 
-$admin-background-dark-color: $_black;
-$admin-background-light-color: $_white;
-$admin-background-section-color: $_gallery;
+$success-color: $_green;
+$warning-color: $_orange;
+$danger-color: $_red;
 
-$admin-background-main-color: $_valhalla;
-$admin-background-secondary-color: $_lonestar;
-$admin-background-gray-color: $_santas-gray;
+// $admin-primary-color: $_valhalla;
+// $admin-secondary-color: $_lonestar;
 
-$admin-text-color: $_black;
-$admin-text-light-color: $_white;
-$admin-text-highlight-color: $_lonestar;
+// $admin-background-dark-color: $_black;
+// $admin-background-light-color: $_white;
+// $admin-background-section-color: $_gallery;
 
-$admin-border-color: $_valhalla;
-$admin-border-light-color: $_santas-gray;
+// $admin-background-main-color: $_valhalla;
+// $admin-background-secondary-color: $_lonestar;
+// $admin-background-gray-color: $_santas-gray;
+
+// $admin-text-color: $_black;
+// $admin-text-light-color: $_white;
+// $admin-text-highlight-color: $_lonestar;
+
+// $admin-border-color: $_valhalla;
+// $admin-border-light-color: $_santas-gray;

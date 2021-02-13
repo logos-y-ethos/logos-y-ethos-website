@@ -1,6 +1,6 @@
 @extends('layouts.website')
 
-@section('title', '| Inicio')
+@section('title', '')
 
 @section('nav')
 

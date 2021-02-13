@@ -50,10 +50,10 @@
 @use 'general/body';
 @use 'general/headings';
 @use 'general/admin-content-container';
+@use 'general/module-container';
 // @use 'general/images.scss';
-// @use 'general/links.scss';
+@use 'general/links.scss';
 // @use 'general/lists.scss';
-
 
 /* ***************** Components ***************** */
 @use 'components/organisms/nav';
@@ -66,6 +66,9 @@
 // Dashboard
 @use 'components/organisms/dashboard';
 @use 'components/molecules/social-box';
+
+@use 'components/molecules/table-items';
+@use 'components/molecules/add-button';
 
 /* ***************** Utilities ***************** */
 @use 'utilities/align';

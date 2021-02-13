@@ -15,7 +15,10 @@ class CollaboratorController extends Controller
      */
     public function index()
     {
-        //
+        $collaborators = Collaborator::get();
+
+        return response()->view('admin.collaborators.index', ['collaborators' => $collaborators ]);
+        // return response()->json(['collaborators' => $collaborators]);
     }
 
     /**

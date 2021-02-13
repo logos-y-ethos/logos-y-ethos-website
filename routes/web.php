@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\CollaboratorController;
+use App\Http\Controllers\PublicationController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* ========================== WEBSITE ========================== */
+
+// Inicio
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-
-/* ========================== Nosotros ========================== */
-
+// Nosotros
 Route::get('/nosotros', function () {
     return view('website.us.who-we-are');
 });
@@ -36,17 +36,46 @@ Route::get('/nosotros/consejo-directivo', function () {
 });
 Route::get('/nosotros/colaboradores', [WebsiteController::class, 'getCollaborators']);
 
-require __DIR__.'/auth.php';
 
-/* ========================== Publicaciones ========================== */
-
+// Publicaciones
 Route::get('/publicaciones', [WebsiteController::class, 'getPublications']);
 
-/* ========================== Contacto ========================== */
+// Eventos
 
+// Contacto
 Route::get('/contacto', function () {
     return view('website.contact');
 });
+
+/* ========================== LOGIN ========================== */
+
+require __DIR__.'/auth.php';
+
+/* ========================== ADMIN ========================== */
+
+Route::prefix('admin')->middleware(['auth'])->group( function () {
+
+    // Dashboard
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    // Publicaciones
+    Route::get('/publicaciones', [PublicationController::class, 'index']);
+
+    // Eventos
+    Route::get('/eventos', function () {
+        return view('admin.dashboard');
+    });
+
+    // Colaboradores
+    Route::get('/colaboradores', [CollaboratorController::class, 'index']);
+
+    // Usuarios
+    Route::get('/usuarios', [UserController::class, 'index']);
+
+});
+
 
 
 // ༼つ◕_◕༽つ Have happy coding!!

@@ -1,0 +1,12 @@
+@use '../../../base/colors';
+
+.title-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: colors.$background-section-color;
+    text-transform: uppercase;
+}
