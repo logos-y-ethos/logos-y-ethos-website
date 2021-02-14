@@ -14,6 +14,11 @@
         <h1>CONTACTO</h1>
     </header>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=2420237788122119&autoLogAppEvents=1"
+        nonce="ssoJcdRV"></script>
+
     <div>
 
         <section class="contact-section">
@@ -52,7 +57,8 @@
                                     fill="#231852" />
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/channel/UCJgS6cOz3I1x6lCWZlDLppA" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/channel/UCJgS6cOz3I1x6lCWZlDLppA" target="_blank"
+                            rel="noopener noreferrer">
                             <svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.508 20.7258H15.4788C15.3884 20.7258 6.34236 20.7083 4.06007 20.0885C2.80506 19.7504 1.82495 18.7698 1.48757 17.5146C1.07716 15.1993 0.878976 12.8513 0.895483 10.5C0.88488 8.14481 1.08843 5.79353 1.50361 3.47521C1.85026 2.21887 2.82607 1.23367 4.07903 0.874997C6.29861 0.291664 15.0953 0.291664 15.4686 0.291664H15.4992C15.5911 0.291664 24.6605 0.309164 26.9194 0.928956C28.1718 1.26876 29.1499 2.24743 29.489 3.5C29.9125 5.82391 30.1113 8.1832 30.0826 10.5452C30.0928 12.8975 29.8888 15.2459 29.473 17.5612C29.1313 18.8149 28.1505 19.7934 26.8961 20.1323C24.6794 20.72 15.8813 20.7258 15.508 20.7258ZM12.5913 6.13229L12.584 14.8823L20.1849 10.5073L12.5913 6.13229Z"
@@ -89,6 +95,8 @@
         </section>
 
         <section class="contact-social-embeds">
+
+            <div class="fb-page" data-href="https://www.facebook.com/celogosyethos/" data-tabs="timeline, messages, events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/celogosyethos/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/celogosyethos/">Asociación Círculo de Estudios Logos y Ethos</a></blockquote></div>
         </section>
 
     </div>
