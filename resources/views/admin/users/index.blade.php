@@ -16,7 +16,7 @@
 
         <h5>Lista de Usuarios</h5>
 
-        <a class="add-button" href="#">
+        <a class="button add-button" href="#">
             Agregar
             @include('../admin/components/icons/add')
         </a>

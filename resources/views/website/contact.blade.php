@@ -14,10 +14,14 @@
         <h1>CONTACTO</h1>
     </header>
 
+    {{-- Facebook --}}
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=2420237788122119&autoLogAppEvents=1"
         nonce="ssoJcdRV"></script>
+
+    {{-- Linkedin --}}
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <div>
 
@@ -96,7 +100,21 @@
 
         <section class="contact-social-embeds">
 
-            <div class="fb-page" data-href="https://www.facebook.com/celogosyethos/" data-tabs="timeline, messages, events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/celogosyethos/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/celogosyethos/">Asociación Círculo de Estudios Logos y Ethos</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/celogosyethos/" data-tabs="timeline, messages, events"
+                data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/celogosyethos/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/celogosyethos/">Asociación Círculo de Estudios Logos y Ethos</a>
+                </blockquote>
+            </div>
+
+            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div>
+            <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div>
+            <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+
         </section>
 
     </div>

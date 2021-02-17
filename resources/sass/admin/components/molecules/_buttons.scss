@@ -1,0 +1,46 @@
+@use '../../../base/colors';
+
+.button {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    color: colors.$text-light-color;
+    border-radius: 5px;
+
+    &:hover {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.add-button {
+    background-color: colors.$success-color;
+}
+
+.view-all-button {
+    background-color: colors.$view-color;
+}
+
+
+.save-button {
+    width: 350px;
+    height: 2.25rem;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background-color: colors.$success-color;
+    color: colors.$text-light-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}

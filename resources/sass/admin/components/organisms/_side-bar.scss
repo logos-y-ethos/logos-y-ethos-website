@@ -45,8 +45,8 @@
         display: block;
     }
 
-    transition: width 0.15s;
-    transition-timing-function: ease-out;
+    transition: width 0.25s;
+    transition-timing-function: ease;
     &:hover {
         width: 300px;
     }

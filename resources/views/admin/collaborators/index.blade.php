@@ -10,13 +10,13 @@
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Publicaciones'])
+    @include('../admin/components/title-bar', ['title' => 'Colaboradores'])
 
     <div class="module-container">
 
         <h5>Lista de Colaboradores</h5>
 
-        <a class="add-button" href="#">
+        <a class="button add-button" href="{{ url('/admin/colaboradores/agregar') }}">
             Agregar
             @include('../admin/components/icons/add')
         </a>

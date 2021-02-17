@@ -70,6 +70,11 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
 
     // Colaboradores
     Route::get('/colaboradores', [CollaboratorController::class, 'index']);
+    Route::get('/colaboradores/agregar', function () {
+        return view('admin.collaborators.add');
+    });
+    Route::post('/colaboradores/agregar', [CollaboratorController::class, 'store']);
+
 
     // Usuarios
     Route::get('/usuarios', [UserController::class, 'index']);

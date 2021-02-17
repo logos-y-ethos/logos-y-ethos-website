@@ -39,7 +39,14 @@ class CollaboratorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $collaborator = new Collaborator($request->all());
+        // $collaborator->fill($request->all());
+
+        $collaborator->save();
+
+        // return response()->json(['collaborator' => $collaborator]);
+        return redirect('admin/colaboradores');
+
     }
 
     /**
