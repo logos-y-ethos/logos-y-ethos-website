@@ -16,7 +16,6 @@ class CollaboratorController extends Controller
     public function index()
     {
         $collaborators = Collaborator::get();
-
         return response()->view('admin.collaborators.index', ['collaborators' => $collaborators ]);
         // return response()->json(['collaborators' => $collaborators]);
     }
@@ -41,12 +40,9 @@ class CollaboratorController extends Controller
     {
         $collaborator = new Collaborator($request->all());
         // $collaborator->fill($request->all());
-
         $collaborator->save();
-
         // return response()->json(['collaborator' => $collaborator]);
         return redirect('admin/colaboradores');
-
     }
 
     /**
@@ -68,7 +64,8 @@ class CollaboratorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $collaborator = Collaborator::find($id);
+        return view('admin.collaborators.edit', ['collaborator' => $collaborator ]);
     }
 
     /**
@@ -80,7 +77,10 @@ class CollaboratorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $collaborator = Collaborator::find($id);
+        $collaborator->fill($request->all());
+        $collaborator->save();
+        return redirect('admin/colaboradores');
     }
 
     /**
@@ -91,6 +91,9 @@ class CollaboratorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $collaborator = Collaborator::find($id);
+        $collaborator->delete();
+        return redirect('admin/colaboradores');
+        // return response()->json(['collaborator' => $collaborator]);
     }
 }

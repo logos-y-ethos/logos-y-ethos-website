@@ -93,7 +93,7 @@
                 COLABORADORES
             </div>
             <div class="options">
-                <a href="#">
+                <a href="{{ url('/admin/colaboradores/agregar') }}">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19 20H17V17H14V15H17V12H19V15H22V17H19V20ZM12 17H2V15H12V17ZM15 13H2V11H15V13ZM15 9H2V7H15V9Z"
@@ -101,7 +101,7 @@
                     </svg>
                     Registrar nuevo
                 </a>
-                <a href="{{ url('/admin/colaboradores') }} ">
+                <a href="{{ url('/admin/colaboradores') }}">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M20 18H8V16H20V18ZM6 18H4V16H6V18ZM20 13H8V11H20V13ZM6 13H4V11H6V13ZM20 8H8.023V6H20V8ZM6 8H4V6H6V8Z"

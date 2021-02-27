@@ -74,13 +74,14 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
         return view('admin.collaborators.add');
     });
     Route::post('/colaboradores/agregar', [CollaboratorController::class, 'store']);
-
+    Route::get('/colaboradores/borrar/{id}', [CollaboratorController::class, 'destroy']);
+    Route::get('/colaboradores/editar/{id}', [CollaboratorController::class, 'edit']);
+    Route::post('/colaboradores/editar/{id}', [CollaboratorController::class, 'update']);
 
     // Usuarios
     Route::get('/usuarios', [UserController::class, 'index']);
 
 });
-
 
 
 // ༼つ◕_◕༽つ Have happy coding!!

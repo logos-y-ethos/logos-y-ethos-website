@@ -56,20 +56,23 @@
 // @use 'general/lists.scss';
 
 /* ***************** Components ***************** */
+
+@use 'components/molecules/social-box';
+@use 'components/molecules/table-items';
+@use 'components/molecules/buttons';
+@use 'components/molecules/forms';
+@use 'components/molecules/modal';
+
 @use 'components/organisms/nav';
 @use 'components/organisms/side-bar';
 @use 'components/organisms/title-bar';
 
 // Login
 @use 'components/organisms/login';
-// @use '../website/components/organisms/footer';
 // Dashboard
 @use 'components/organisms/dashboard';
-@use 'components/molecules/social-box';
 
-@use 'components/molecules/table-items';
-@use 'components/molecules/buttons';
-@use 'components/molecules/forms';
+
 
 /* ***************** Utilities ***************** */
 @use 'utilities/align';
