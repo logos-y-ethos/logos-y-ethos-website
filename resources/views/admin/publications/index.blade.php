@@ -16,7 +16,7 @@
 
         <h5>Lista de Publicaciones</h5>
 
-        <a class="button add-button" href="#">
+        <a class="button add-button" href="{{ url('/admin/publicaciones/agregar') }}">
             Agregar
             @include('../admin/components/icons/add')
         </a>
@@ -63,7 +63,7 @@
                             <a href="#">
                                 @include('../admin/components/icons/edit')
                             </a>
-                            <a href="#">
+                            <a href="#" onclick="openModal(this)" data-id="{{ $publication->id }}">
                                 @include('../admin/components/icons/remove')
                             </a>
                         </td>
@@ -77,5 +77,55 @@
         </table>
 
     </div>
+
+    <div id="delete-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="hideModal()">&times;</span>
+                <h4>¿Deseas borrar este registro?</h4>
+            </div>
+            <div class="modal-body">
+                <p>Colaborador N° <span id="modal-span-info"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button class="button cancel-button" onclick="hideModal()">Cancelar</button>
+                <button class="button delete-button" onclick="deleteItem()">Borrar</button>
+            </div>
+        </div>
+    </div>
+
+@endsection
+
+@section('scripts')
+
+<script>
+    let idToDelete = 0;
+    let modal = document.getElementById("delete-modal");
+    let modalSpanInfo = document.getElementById("modal-span-info");
+
+    function openModal(element) {
+        // console.log(element.getAttribute("data-id"));
+        idToDelete = element.getAttribute("data-id");
+        modalSpanInfo.textContent = idToDelete;
+        modal.style.display = "flex";
+    }
+
+    function hideModal() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function deleteItem() {
+        if (idToDelete >= 0) location.assign(`{{ url('/admin/publicaciones/borrar/') }}/${idToDelete}`);
+    }
+
+</script>
 
 @endsection

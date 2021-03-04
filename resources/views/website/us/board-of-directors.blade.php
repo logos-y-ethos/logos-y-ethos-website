@@ -22,7 +22,7 @@
 
         <div class="directors-list-item">
             <h3>PRESIDENTA</h3>
-            <img src="{{ asset('images/us/Diana Isabel Asto Paredes.jpg') }}" alt="">
+            <img src="{{ asset('images/us/Diana Isabel Asto Paredes.png') }}" alt="">
             <b>Diana Isabel Asto Paredes</b>
             <a href="mailto:dasto@unitru.edu.pe">dasto@unitru.edu.pe</a>
             <p>Preside y representa a la asociación</p>
@@ -30,7 +30,7 @@
 
         <div class="directors-list-item">
             <h3>SECRETARIO</h3>
-            <img src="{{ asset('images/us/Brayan Micael Linares Oyos.jpg') }}" alt="">
+            <img src="{{ asset('images/us/Brayan Micael Linares Oyos.png') }}" alt="">
             <b>Brayan Micael Linares Oyos</b>
             <a href="mailto:blinares@unitru.edu.pe">blinares@unitru.edu.pe</a>
             <p>
@@ -48,7 +48,7 @@
 
         <div class="directors-list-item">
             <h3>TESORERA</h3>
-            <img src="{{ asset('images/us/Mercedes Liliana Polo Gonzalez.jpg') }}" alt="">
+            <img src="{{ asset('images/us/Mercedes Liliana Polo Gonzalez.png') }}" alt="">
             <b>Mercedes Liliana Polo Gonzalez</b>
             <a href="mailto:mlpolog@unitru.edu.pe">mlpolog@unitru.edu.pe</a>
             <p>

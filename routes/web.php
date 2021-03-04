@@ -39,6 +39,7 @@ Route::get('/nosotros/colaboradores', [WebsiteController::class, 'getCollaborato
 
 // Publicaciones
 Route::get('/publicaciones', [WebsiteController::class, 'getPublications']);
+Route::get('/publicaciones/{id}', [WebsiteController::class, 'getPublication']);
 
 // Eventos
 
@@ -62,6 +63,11 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
 
     // Publicaciones
     Route::get('/publicaciones', [PublicationController::class, 'index']);
+    Route::get('/publicaciones/agregar', function () {
+        return view('admin.publications.add');
+    });
+    Route::post('/publicaciones/agregar', [PublicationController::class, 'store']);
+    Route::get('/publicaciones/borrar/{id}', [PublicationController::class, 'destroy']);
 
     // Eventos
     Route::get('/eventos', function () {

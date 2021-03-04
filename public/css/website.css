@@ -1316,7 +1316,7 @@ ul {
   min-height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
   padding: 50px 0;
 }
@@ -1349,6 +1349,10 @@ ul {
 
   .contact-section .section-right .info a {
     justify-content: center;
+  }
+
+  .contact-social-embeds {
+    flex-wrap: wrap;
   }
 }
 

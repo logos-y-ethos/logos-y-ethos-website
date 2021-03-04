@@ -65,7 +65,7 @@
                 </div>
                 <div class="photos">
                     <img src="{{ asset('images/us/Xiomara Carolina Roncal Cueva.jpg') }}" alt="">
-                    <img src="{{ asset('images/us/Milagros Aubanel Lozano Ulloa.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Milagros Aubanel Lozano Ulloa.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -116,8 +116,8 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Alessandro Carlos Alfredo Reymundo Vilca.jpg') }}" alt="">
-                    <img src="{{ asset('images/us/Jose Carlos Rosario Sanchez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Alessandro Carlos Alfredo Reymundo Vilca.png') }}" alt="">
+                    <img src="{{ asset('images/us/Jose Carlos Rosario Sanchez.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -154,7 +154,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Emily Shantal Lozano Rodriguez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Emily Shantal Lozano Rodriguez.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -204,7 +204,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Estefani Verde Rodriguez.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Estefani Verde Rodriguez.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -245,7 +245,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Maria Alexandra de los Milagros Vasquez Correa.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Maria Alexandra de los Milagros Vasquez Correa.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -324,7 +324,7 @@
                     </article>
                 </div>
                 <div class="photos">
-                    <img src="{{ asset('images/us/Maria Helena de los Angeles Herrera Mendoza.jpg') }}" alt="">
+                    <img src="{{ asset('images/us/Maria Helena de los Angeles Herrera Mendoza.png') }}" alt="">
                 </div>
             </div>
         </section>

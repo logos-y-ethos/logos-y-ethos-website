@@ -2,7 +2,7 @@
     <a href="{{ url('/') }}"" target="_blank" rel="noopener noreferrer">
         <img src="{{ asset('images/logos-y-ethos-logo.png') }}" alt="">
     </a>
-    <a href="#">{{ Auth::user()->display_name }}</a>
+    <a href="#">{{ Auth::user()->name }}</a>
     <a href="#">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15.5" cy="15.5" r="15.5" fill="white" />

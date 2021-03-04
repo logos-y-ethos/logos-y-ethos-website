@@ -17,20 +17,19 @@
                 <div class="card">
                     REVISTA N° {{ $publication->code }}<br>
                     <span>{{ $publication->title }}</span>
-                    <img src="{{ asset('images' . $publication->cover) }}" alt="">
-                    <a href="#">VER REVISTA</a>
+                    <img src="{{ asset('files' . $publication->cover) }}" alt="">
+                    <a href="{{url('/publicaciones/'.$publication->id)}}">VER REVISTA</a>
                 </div>
             @endforeach
         </div>
         <div class="publications-view">
             {{-- <h1>PUBLICACIONES</h1> --}}
-
             <div class="view-pdf">
 
-                @if (count($publications) > 0)
+                @if (!is_null($publicationToShow))
 
                     <div class="title">
-                        <span>{{ $publications[0]->title }}</span>
+                        <span>{{ $publicationToShow->title }}</span>
                         <span>
                             <a href="#pdf-info">Información</a>
                         </span>
@@ -38,40 +37,43 @@
 
                     {{-- <div id="example1"></div> --}}
 
-                    <iframe id="publication-iframe"
-                        src="http://docs.google.com/viewer?url=http://www.africau.edu/images/default/sample.pdf&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-                        width="100%" height="100vh" style="width: 100%; height: calc(100vh - 150px);" frameborder="0"
-                        scrolling="no"></iframe>
-
-                    {{-- <iframe
-                        src={{ 'http://docs.google.com/viewer?url=' . asset('files' . $publications[0]->file) . '&pid=explorer&efh=false&a=v&chrome=false&embedded=true' }}
+                    {{-- <iframe id="publication-iframe"
+                        {{-- src="http://docs.google.com/viewer?url=http://www.africau.edu/images/default/sample.pdf&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+                        src="{{ 'http://docs.google.com/viewer?url='. asset($publication->file) .'&pid=explorer&efh=false&a=v&chrome=false&embedded=true' }}"
                         width="100%" height="100vh" style="width: 100%; height: calc(100vh - 150px);" frameborder="0"
                         scrolling="no"></iframe> --}}
 
-                    {{-- <a href="{{ asset('files' . $publications[0]->file) }}">Download</a>
-                    <embed src="{{ asset('files' . $publications[0]->file) }}" type="">
+                    <iframe
+                        id="publication-iframe"
+                        {{-- src={{ 'http://docs.google.com/viewer?url=' . asset('files' . $publicationToShow->file) . '&pid=explorer&efh=false&a=v&chrome=false&embedded=true' }} --}}
+                        {{-- src={{ 'http://docs.google.com/viewer?url=http://celogosyethos.com/files/publications/sample.pdf&pid=explorer&efh=false&a=v&chrome=false&embedded=true' }} --}}
+                        src={{ 'http://docs.google.com/viewer?url=' . 'http://celogosyethos.com/files' . $publicationToShow->file . '&pid=explorer&efh=false&a=v&chrome=false&embedded=true' }}
+                        width="100%" height="100vh" style="width: 100%; height: calc(100vh - 150px);" frameborder="0"
+                        scrolling="no"></iframe>
 
-                    <iframe src="{{ asset('files' . $publications[0]->file) }}" width="100%" height="500px">
-                    </iframe> --}}
+                    {{-- <a href="{{ asset('files' . $publicationToShow->file) }}">Download</a> --}}
+                    {{-- <embed src="{{ asset('files' . $publicationToShow->file) }}" type=""> --}}
+
+                    {{-- <iframe src="{{ asset('files' . $publicationToShow->file) }}" width="100%" height="500px"></iframe> --}}
 
                     <div class="info" id="pdf-info">
                         <div class="about">
-                            REVISTA N° {{ $publications[0]->code }}<br>
-                            <span>{{ $publications[0]->title }}</span>
-                            <img src="{{ asset('images' . $publications[0]->cover) }}" alt="">
+                            REVISTA N° {{ $publicationToShow->code }}<br>
+                            <span>{{ $publicationToShow->title }}</span>
+                            <img src="{{ asset('images' . $publicationToShow->cover) }}" alt="">
                         </div>
                         <div class="description">
                             <p>
                                 <b>Título: </b>
-                                {{ $publications[0]->title }}
+                                {{ $publicationToShow->title }}
                             </p>
                             <p>
                                 <b>Fecha:</b>
-                                {{ $publications[0]->date }}
+                                {{ $publicationToShow->date }}
                             </p>
                             <p>
                                 <b>Sobre la revista:</b><br>
-                                {!! nl2br($publications[0]->description) !!}
+                                {!! nl2br($publicationToShow->description) !!}
                             </p>
                         </div>
                     </div>

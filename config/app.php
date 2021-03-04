@@ -229,4 +229,7 @@ return [
 
     ],
 
+    //
+    'Input' => Illuminate\Support\Facades\Input::class
+
 ];

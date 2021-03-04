@@ -48,7 +48,7 @@
     min-height: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
     padding: 50px 0;
 }
@@ -77,5 +77,8 @@
                 }
             }
         }
+    }
+    .contact-social-embeds {
+        flex-wrap: wrap;
     }
 }
