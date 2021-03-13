@@ -49,6 +49,7 @@
 <body>
 
     @yield('nav')
+    @include('../website/components/sub-nav')
 
     <div>
         @yield('content')

@@ -57,8 +57,12 @@
 @use 'general/containers';
 
 /* ***************** Components ***************** */
+@use 'components/molecules/buttons';
+@use 'components/molecules/sub-nav';
 @use 'components/organisms/nav';
 @use 'components/organisms/footer';
+//Home
+@use 'components/organisms/home';
 // Us
 @use 'components/molecules/sub-menu';
 @use 'components/organisms/us';

@@ -10,6 +10,14 @@ use Throwable;
 class WebsiteController extends Controller
 {
 
+    public function index() {
+
+        $publications = Publication::orderBy('id', 'DESC')->limit(2)->get();
+
+        return response()->view('index', ['publications' => $publications]);
+        // return response()->json(['publications' => $publications]);
+    }
+
     public function getCollaborators()
     {
         // $collaborators = Collaborator::all();

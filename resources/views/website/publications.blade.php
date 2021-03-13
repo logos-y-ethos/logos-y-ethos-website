@@ -59,8 +59,8 @@
                     <div class="info" id="pdf-info">
                         <div class="about">
                             REVISTA N° {{ $publicationToShow->code }}<br>
-                            <span>{{ $publicationToShow->title }}</span>
-                            <img src="{{ asset('images' . $publicationToShow->cover) }}" alt="">
+                            <span>{{ $publicationToShow->title }}</span><br/>
+                            <img src="{{ asset('files' . $publicationToShow->cover) }}" alt="">
                         </div>
                         <div class="description">
                             <p>

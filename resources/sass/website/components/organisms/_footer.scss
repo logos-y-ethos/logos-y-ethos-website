@@ -33,15 +33,18 @@
 @media only screen and (max-width: 600px) {
     .footer {
         flex-direction: column-reverse;
+        grid-template-columns: 100%;
         padding: 10px 10px;
 
         :nth-child(1) {
+            grid-row: 3;
             svg {
                 width: 30px;
             }
         }
 
         :nth-child(3) {
+            grid-row: 2;
             a {
                 svg {
                     width: 30px;

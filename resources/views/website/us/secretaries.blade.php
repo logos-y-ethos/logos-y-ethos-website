@@ -81,11 +81,6 @@
                             <i>Alessandro Carlos Alfredo Reymundo Vilca</i>
                             <a href="mailto:areymundo@unitru.edu.pe">areymundo@unitru.edu.pe </a>
                         </p>
-                        <p>
-                            <b>Secretario Adjunto: </b>
-                            <i>José Carlos Rosario Sánchez</i>
-                            <a href="mailto:jrosarios@unitru.edu.pe">jrosarios@unitru.edu.pe</a>
-                        </p>
                     </article>
                     <article>
                         <p>
@@ -117,13 +112,12 @@
                 </div>
                 <div class="photos">
                     <img src="{{ asset('images/us/Alessandro Carlos Alfredo Reymundo Vilca.png') }}" alt="">
-                    <img src="{{ asset('images/us/Jose Carlos Rosario Sanchez.png') }}" alt="">
                 </div>
             </div>
         </section>
         <section>
             <button class="collapsible active">
-                <h4>SECRETARÍA DE INVESTIGACIÓN</h4>
+                <h4>SECRETARÍA DE INVESTIGACIÓN ACADÉMICA</h4>
             </button>
             <div class="content">
                 <div class="left-content">
@@ -210,7 +204,7 @@
         </section>
         <section>
             <button class="collapsible active">
-                <h4>SECRETARÍA DE ÉTICA INSTITUCIONAL</h4>
+                <h4>SECRETARÍA DE ÉTICA INSTITUCIONAL Y RR.HH.</h4>
             </button>
             <div class="content">
                 <div class="left-content">

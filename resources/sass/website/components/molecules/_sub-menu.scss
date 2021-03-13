@@ -2,7 +2,7 @@
 @use '../../../base/typography';
 
 .sub-menu {
-    height: 56px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +19,7 @@
 
     .item {
         text-align: center;
+        padding: 5px;
     }
 
     a {

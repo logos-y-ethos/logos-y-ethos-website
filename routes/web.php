@@ -20,9 +20,11 @@ use App\Http\Controllers\UserController;
 /* ========================== WEBSITE ========================== */
 
 // Inicio
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/', [WebsiteController::class, 'index']);
 
 // Nosotros
 Route::get('/nosotros', function () {
