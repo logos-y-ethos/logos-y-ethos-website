@@ -14,7 +14,7 @@
         font-weight: 600;
     }
     h1 {
-        margin: 0;
+        padding: 0;
     }
 }
 
@@ -73,6 +73,7 @@
             padding: 25px;
             column-gap: 15px;
             background-color: colors.$background-light-color;
+            border-radius: 2%;
 
             .about {
                 text-align: center;
@@ -131,10 +132,14 @@
             column-gap: 15px;
 
             a {
-                display: block;
-                background-color: colors.$background-gray-color;
                 width: 111px;
                 height: 111px;
+                display: flex;
+                background-color: colors.$background-light-color;
+                border-radius: 5px;
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
             }
         }
     }
@@ -181,13 +186,6 @@
                 justify-content: center;
                 row-gap: 10px;
                 column-gap: 10px;
-
-                a {
-                    display: block;
-                    background-color: colors.$background-gray-color;
-                    width: 111px;
-                    height: 111px;
-                }
             }
         }
         .section-last-publications {

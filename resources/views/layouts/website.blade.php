@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Leví Arista">
-    <meta name="description" content="Sitio web del Círculo de Estudios de Estudios Logos y Ethos" />
+    <meta name="description" content="El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la Escuela de Derecho de la Universidad Nacional de Trujillo." />
     <meta name="keywords" content="circulo estudios logos ethos, circulo estudios derecho">
 
     <title>A.C.E. Logos y Ethos @yield('title')</title>
@@ -51,7 +51,7 @@
     @yield('nav')
     @include('../website/components/sub-nav')
 
-    <div>
+    <div style="margin-top: 70px">
         @yield('content')
     </div>
 

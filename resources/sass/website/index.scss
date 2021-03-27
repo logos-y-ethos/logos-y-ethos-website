@@ -66,13 +66,14 @@
 // Us
 @use 'components/molecules/sub-menu';
 @use 'components/organisms/us';
-@use 'components/organisms/us-collaborators';
-@use 'components/organisms/us-directors';
 @use 'components/organisms/us-secretaries';
+@use 'components/organisms/us-organization';
+@use 'components/organisms/us-collaborators';
 // Publications
 @use 'components/organisms/publications';
 // Contact
 @use 'components/organisms/contact';
 
 /* ***************** Utilities ***************** */
-@use 'utilities/hidden'
+@use 'utilities/hidden';
+@use 'utilities/color';

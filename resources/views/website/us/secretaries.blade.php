@@ -10,11 +10,15 @@
 
 @section('content')
 
-    <header>
+    <header style="
+    background: url({{ asset('images/section-us-bg.png') }});
+    background-position: center;
+    background-size: cover;
+    color: white">
         <h1>NOSOTROS</h1>
     </header>
 
-    @include('website.components.sub-menu')
+    @include('website.components.sub-menu', ['active' => 'secretarias'])
 
     <h2>Secretarías</h2>
 

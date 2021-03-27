@@ -4,7 +4,7 @@
 .sub-menu {
     height: 65px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     padding: 0 150px;
@@ -20,6 +20,11 @@
     .item {
         text-align: center;
         padding: 5px;
+
+        &.active {
+            line-height: 15px;
+            border-bottom: solid colors.$text-light-color 4px;
+        }
     }
 
     a {

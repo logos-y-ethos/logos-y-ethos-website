@@ -1,6 +1,6 @@
 @extends('layouts.website')
 
-@section('title', '| Colaboradores')
+@section('title', '| Comité Consultivo')
 
 @section('nav')
 
@@ -10,13 +10,17 @@
 
 @section('content')
 
-    <header>
+    <header style="
+                background: url({{ asset('images/section-us-bg.png') }});
+                background-position: center;
+                background-size: cover;
+                color: white">
         <h1>NOSOTROS</h1>
     </header>
 
-    @include('website.components.sub-menu')
+    @include('website.components.sub-menu', ['active' => 'organizacion'])
 
-    <h2>Colaboradores</h2>
+    <h2>COMITÉ CONSULTIVO</h2>
 
     <section class="us-container collaborators-list">
 
@@ -26,25 +30,6 @@
                 <h3>{{ $student->initial }} </h3>
                 <ul>
                     @foreach (explode('###', $student->people) as $people)
-                        <li class="">{{ $people }}</li>
-                    @endforeach
-                </ul>
-            </div>
-
-        @endforeach
-
-    </section>
-
-    <h2>Colaboradores Externos</h2>
-
-    <section class="us-container collaborators-list">
-
-        @foreach ($graduates as $graduate)
-
-            <div class="collaborators-list-item">
-                <h3>{{ $graduate->initial }} </h3>
-                <ul>
-                    @foreach (explode('###', $graduate->people) as $people)
                         <li class="">{{ $people }}</li>
                     @endforeach
                 </ul>

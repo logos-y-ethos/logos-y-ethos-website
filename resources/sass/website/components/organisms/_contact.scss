@@ -2,43 +2,49 @@
 @use '../../../base/typography';
 
 .contact-section {
+
+    height: calc(100vh - 70px);
+    // margin-top: 250px;
     padding: 2.5% 10%;
-    display: grid;
-    grid-template-columns: 5fr 3fr;
+    display: flex;
+    flex-direction: column;
     gap: 25px;
-    align-items: center;
+    justify-content: center;
     background-color: colors.$background-section-color;
+    color: colors.$text-light-color;
+
+    h1 {
+        text-align: left;
+    }
 
     img {
         width: 100%;
     }
 
-    .section-right {
-        .social {
-            font-family: typography.$headings-font;
-            font-size: 25px;
-            color: colors.$text-highlight-color;
-            line-height: 1;
+    .social {
+        // font-family: typography.$headings-font;
+        // font-size: 25px;
+        // color: colors.$text-light-color;
+        line-height: 1;
 
-            a:not(:last-child) {
-                margin-right: 5px;
-            }
+        a:not(:last-child) {
+            margin-right: 5px;
         }
-        .info {
-            text-align: right;
-            font-weight: 600;
+    }
+    .info {
+        font-weight: 600;
 
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                font-weight: 400;
-                color: colors.$text-color;
-                text-decoration: underline;
+        a {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 400;
+            color: colors.$text-light-color;
+            text-decoration: underline;
 
-                svg {
-                    margin-right: 10px;
-                }
+            svg {
+                margin-right: 10px;
             }
         }
     }

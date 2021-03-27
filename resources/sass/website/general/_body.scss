@@ -9,6 +9,7 @@ html {
 body {
     font-family: typography.$text-font;
     font-size: 15px;
+    background-color: colors.$background-section-color;
     color: colors.$text-color;
 
     @include mixins.scroll-bar;

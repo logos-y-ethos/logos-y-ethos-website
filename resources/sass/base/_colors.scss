@@ -7,11 +7,15 @@
 $_valhalla: #231852;
 $_lonestar: #660001;
 $_rose-fog: #e4c3ad;
-$_santas-gray: #9EA3B0;
-$_gallery: #EEEEEE;
-$_white: #FFFFFF;
+$_santas-gray: #9ea3b0;
+$_gallery: #eeeeee;
+
+$_white: #ffffff;
 $_black: #000000;
 
+$_dune: #282624;
+$_shark: #1c1c23;
+$_fuscous-gray: #504E4C;
 
 /* Website */
 
@@ -28,26 +32,28 @@ $background-secondary-color: $_lonestar;
 $background-alternate-color: $_rose-fog;
 $background-gray-color: $_santas-gray;
 
+$background-alternate-1-color: $_dune;
+$background-alternate-2-color: $_shark;
+$background-alternate-3-color: $_fuscous-gray;
+
 $text-color: $_black;
 $text-light-color: $_white;
 $text-highlight-color: $_lonestar;
 
 $border-color: $_santas-gray;
 
-
 /* Admin */
 
 $_green: #008000;
-$_orange: #FFA500;
-$_red: #FF0000;
-$_blue: #0080FF;
+$_orange: #ffa500;
+$_red: #ff0000;
+$_blue: #0080ff;
 
 $success-color: $_green;
 $warning-color: $_orange;
 $danger-color: $_red;
 $view-color: $_blue;
 $neutral-color: $_valhalla;
-
 
 // $admin-primary-color: $_valhalla;
 // $admin-secondary-color: $_lonestar;

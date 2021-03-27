@@ -1,0 +1,5 @@
+@use '../../base/colors';
+
+.text-light {
+    color: colors.$text-light-color !important;
+}

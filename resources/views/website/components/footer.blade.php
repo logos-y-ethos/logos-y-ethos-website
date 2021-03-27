@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" style="background: url({{ asset('images/footer-texture.png') }}); background-position: center; background-size: cover;">
     <div>
         <span>
             <svg class="hidden-xs" width="18" height="24" viewBox="0 0 18 24" fill="none"

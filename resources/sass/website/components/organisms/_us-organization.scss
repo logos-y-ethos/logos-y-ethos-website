@@ -1,0 +1,110 @@
+@use '../../../base/colors';
+
+.organization-container {
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    article {
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        color: colors.$text-light-color;
+        h2 {
+            margin: 0;
+            color: colors.$text-light-color;
+        }
+        a {
+            color: colors.$alternate-color;
+        }
+    }
+
+    article:nth-child(1) {
+        grid-column: auto / span 2;
+        background-color: colors.$background-alternate-1-color;
+
+        .collapsible {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            padding: 0 20px;
+            background-color: colors.$background-alternate-1-color;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            h2 {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:before {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                // content: "\002B";
+                content: url("/images/us/chevron_duo_right.svg");
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: auto;
+            }
+        }
+
+        .active:before {
+            // content: "\2212";
+            content: url("/images/us/chevron_duo_down.svg");
+        }
+
+        .content {
+            max-height: 0;
+            padding: 0 5%;
+            text-align: left;
+            transition: max-height 0.2s ease-out;
+            overflow: hidden;
+
+            .title {
+                display: flex;
+                align-items: center;
+                h4 {
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+    }
+
+    article:nth-child(2),
+    article:nth-child(3) {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article:nth-child(2) {
+        background-color: colors.$background-alternate-2-color;
+    }
+
+    article:nth-child(3) {
+        background-color: colors.$background-alternate-3-color;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .directors-list {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        gap: 0;
+
+        img {
+            max-width: 200px;
+            min-width: 200px;
+            min-height: 200px;
+        }
+    }
+}

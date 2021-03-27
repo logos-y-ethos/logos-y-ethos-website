@@ -33,10 +33,11 @@ Route::get('/nosotros', function () {
 Route::get('/nosotros/secretarias', function () {
     return view('website.us.secretaries');
 });
-Route::get('/nosotros/consejo-directivo', function () {
-    return view('website.us.board-of-directors');
+Route::get('/nosotros/organizacion', function () {
+    return view('website.us.organization');
 });
-Route::get('/nosotros/colaboradores', [WebsiteController::class, 'getCollaborators']);
+Route::get('/nosotros/asamblea-general', [WebsiteController::class, 'getAsambleaGeneral']);
+Route::get('/nosotros/comite-consultivo', [WebsiteController::class, 'getComiteConsultivo']);
 
 
 // Publicaciones

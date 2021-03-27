@@ -413,18 +413,18 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 14px;
+  width: 12px;
+  box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #eeeeee;
-  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white;
-  border: 3px solid transparent;
-  border-radius: 9px;
+  background-color: #9EA3B0;
+  border: 1px solid transparent;
+  border-radius: 10px;
   height: 87px;
   background-clip: content-box;
 }
@@ -519,22 +519,22 @@ a {
 }
 
 .table-items tr:hover {
-  background: #EEEEEE;
+  background: #eeeeee;
   border: 2px solid white;
 }
 
 .table-items tr:hover td {
-  background: #EEEEEE;
+  background: #eeeeee;
   border: 2px solid white;
 }
 
 .table-items th {
-  background: #EEEEEE;
+  background: #eeeeee;
   border: 2px solid white;
 }
 
 .table-items td {
-  border: 2px solid #EEEEEE;
+  border: 2px solid #eeeeee;
 }
 
 .table-items th,
@@ -558,7 +558,7 @@ a {
   gap: 5px;
   margin-bottom: 25px;
   padding: 0 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   outline: none;
   border-radius: 5px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -575,7 +575,7 @@ a {
 }
 
 .view-all-button {
-  background-color: #0080FF;
+  background-color: #0080ff;
 }
 
 .save-button {
@@ -584,7 +584,7 @@ a {
   margin-top: 40px;
   margin-bottom: 0;
   background-color: #008000;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
 }
 
@@ -595,8 +595,8 @@ a {
 .delete-button {
   width: 100%;
   height: 2.25rem;
-  background-color: #FF0000;
-  color: #FFFFFF;
+  background-color: #ff0000;
+  color: #ffffff;
   border: none;
 }
 
@@ -641,7 +641,7 @@ a {
   font-family: inherit;
   background: none;
   box-sizing: border-box;
-  border: 2px solid #9EA3B0;
+  border: 2px solid #9ea3b0;
   border-radius: 4px;
   transition: 180ms box-shadow ease-in-out;
 }
@@ -753,7 +753,7 @@ a {
 
 .nav {
   font-style: italic;
-  background-color: #9EA3B0;
+  background-color: #9ea3b0;
   display: flex;
   position: fixed;
   justify-content: flex-end;
@@ -771,7 +771,7 @@ a {
   display: flex;
   align-items: center;
   height: 70px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 15px;
   transition: background-color 0.2s, color 0.2s;
   transition-timing-function: ease-in-out;
@@ -788,7 +788,7 @@ a {
 
 .nav a:first-child img {
   background-color: white;
-  border: solid #9EA3B0 5px;
+  border: solid #9ea3b0 5px;
   border-radius: 50%;
   width: 100px;
   transition: transform 0.1s, box-shadow 0.1s;
@@ -923,7 +923,7 @@ a {
 
 .side-bar > a span,
 .side-bar form span {
-  color: #FFFFFF;
+  color: #ffffff;
   display: none;
 }
 
@@ -951,7 +951,7 @@ a {
   align-items: center;
   font-weight: 700;
   font-size: 17PX;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   text-transform: uppercase;
 }
 
@@ -992,13 +992,13 @@ a {
 .login-form header img {
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .login-form section {
   padding: 40px 75px;
   background-color: #231852;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   border-radius: 5px;
 }
@@ -1010,7 +1010,7 @@ a {
   font-size: max(16px, 1em);
   font-family: inherit;
   background: none;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid white;
@@ -1067,8 +1067,8 @@ a {
   width: 100%;
   height: 2.25rem;
   margin-top: 15px;
-  background-color: #9EA3B0;
-  color: #FFFFFF;
+  background-color: #9ea3b0;
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   cursor: pointer;
@@ -1085,7 +1085,7 @@ a {
   width: 100%;
   padding: 15px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -1118,7 +1118,7 @@ a {
 
   .login-form header,
   .login-form .messages {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .login-form section {
@@ -1154,7 +1154,7 @@ a {
   height: 100px;
   margin: 25px 0;
   background-color: #231852;
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -1176,7 +1176,7 @@ a {
   justify-content: center;
   gap: 10px;
   padding-left: 15px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 2px solid #231852;
   box-sizing: border-box;
 }

@@ -12,7 +12,9 @@
 
     <div class="publications-container">
         <div class="publicactions-aside">
-            <h1>PUBLICACIONES</h1>
+            <header>
+                <h1>PUBLICACIONES</h1>
+            </header>
             @foreach ($publications as $publication)
                 <div class="card">
                     REVISTA N° {{ $publication->code }}<br>
