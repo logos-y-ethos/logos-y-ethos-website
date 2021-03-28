@@ -1,13 +1,13 @@
 <footer class="footer" style="background: url({{ asset('images/footer-texture.png') }}); background-position: center; background-size: cover;">
-    <div>
-        <span>
+    <div class="contact">
+        <div>
             <svg class="hidden-xs" width="18" height="24" viewBox="0 0 18 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M9 23.25C7.42117 21.9033 5.95773 20.4269 4.625 18.8363C2.625 16.4475 0.250001 12.89 0.250001 9.5C0.248228 5.95943 2.38031 2.76674 5.65134 1.41175C8.92236 0.0567573 12.6876 0.806552 15.19 3.31125C16.8356 4.94951 17.7574 7.17799 17.75 9.5C17.75 12.89 15.375 16.4475 13.375 18.8363C12.0423 20.4269 10.5788 21.9033 9 23.25ZM9 5.75C7.66026 5.75 6.42228 6.46475 5.75241 7.625C5.08253 8.78526 5.08253 10.2147 5.75241 11.375C6.42228 12.5353 7.66026 13.25 9 13.25C11.0711 13.25 12.75 11.5711 12.75 9.5C12.75 7.42893 11.0711 5.75 9 5.75Z"
                     fill="white" />
             </svg>
-            Av. Juan Pablo II S/N, Ciudad Universitaria. <br>Trujillo, Perú<br />
+            <span>Av. Juan Pablo II S/N, <br /> Ciudad Universitaria. <br /> Trujillo, Perú</span>
             <span class="hidden-sm">
                 <a href="mailto:celogosyethos@gmail.com" rel="noopener noreferrer">
                     <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@
                     </svg>
                 </a>
             </span>
-        </span>
+        </div>
         <a class="hidden-xs" href="mailto:celogosyethos@gmail.com" rel="noopener noreferrer">
             <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -42,12 +42,12 @@
             968 883 917<br />
         </a>
     </div>
-    <div>
+    <div class="copyright">
         A.C.E. Logos y Ethos <br />
         Todos los derechos reservados © <br class="hidden-xs" />
         2020
     </div>
-    <div>
+    <div class="social">
         <a href="https://www.facebook.com/celogosyethos" target="_blank" rel="noopener noreferrer">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

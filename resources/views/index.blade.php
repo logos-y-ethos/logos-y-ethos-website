@@ -125,13 +125,13 @@
         <section class="section-collaborators">
             <h3>Colaboradores</h3>
             <div class="collaborators-links">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="http://iushomines.com/" target="_blank" rel="noopener noreferrer">
                     <img src="{{ asset('images/home-collaborators/ius-homines.png') }}" alt="ius-homines">
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://ius360.com/" target="_blank" rel="noopener noreferrer">
                     <img src="{{ asset('images/home-collaborators/ius-360.png') }}" alt="ius-360">
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://icj.pe/" target="_blank" rel="noopener noreferrer">
                     <img src="{{ asset('images/home-collaborators/insituto-de-capacitacion-juridica.png') }}" alt="insituto-de-capacitacion-juridica">
                 </a>
             </div>
@@ -139,7 +139,6 @@
 
         <section class="contact-section"
             style="background: url({{ asset('images/contact/contact-bg.png') }}); background-position: top; background-size: cover; height: auto; border-bottom: solid rgba(0,0,0,.5) 25px;">
-            <img src="{{ asset('images/contact/contact-banner.png') }}" alt="contact-banner">
             <header>
                 <h1>CONTACTO</h1>
             </header>

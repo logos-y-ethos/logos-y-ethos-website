@@ -5,7 +5,7 @@
     <a href={{ url('/') }} class={{ $active === 'inicio' ? 'active' : '' }}>INICIO </a>
     <a href={{ url('/nosotros') }} class={{ $active === 'nosotros' ? 'active' : '' }}>NOSOTROS</a>
     <a href={{ url('/publicaciones') }} class={{ $active === 'publicaciones' ? 'active' : '' }}>PUBLICACIONES</a>
-    <a href={{ url('#') }} class={{ $active === 'eventos' ? 'active' : '' }}>EVENTOS</a>
+    <a href={{ url('/eventos') }} class={{ $active === 'eventos' ? 'active' : '' }}>EVENTOS</a>
     <a href={{ url('/contacto') }} class={{ $active === 'contacto' ? 'active' : '' }}>CONTACTO</a>
     <a href="javascript:void(0);" class="icon" onclick="toogleNav()">
         <span class="icon-menu"></span>

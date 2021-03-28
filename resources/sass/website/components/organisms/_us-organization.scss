@@ -1,18 +1,20 @@
 @use '../../../base/colors';
 
 .organization-container {
+    min-height: calc(100vh - 70px - 163px - 98.8px - 65px);
     padding: 5% 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 
     article {
-        padding: 15px;
+        padding: 5%;
         border-radius: 10px;
         text-align: center;
         color: colors.$text-light-color;
         h2 {
             margin: 0;
+            font-weight: 400;
             color: colors.$text-light-color;
         }
         a {
@@ -23,6 +25,8 @@
     article:nth-child(1) {
         grid-column: auto / span 2;
         background-color: colors.$background-alternate-1-color;
+        display: grid;
+        align-content: center;
 
         .collapsible {
             width: 100%;
@@ -70,7 +74,7 @@
                 display: flex;
                 align-items: center;
                 h4 {
-                    margin: 0 5px 0 0;
+                    margin: 0 5px 2.5px 0;
                 }
             }
         }
@@ -96,15 +100,19 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .directors-list {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
-        gap: 0;
+    .organization-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
 
-        img {
-            max-width: 200px;
-            min-width: 200px;
-            min-height: 200px;
+        article:nth-child(1) {
+            min-height: 300px;
+            grid-column: auto / span 1;
+            display: grid;
+            align-content: center;
+        }
+
+        article {
+            border-radius: 5px;
         }
     }
 }

@@ -26,7 +26,7 @@ class WebsiteController extends Controller
         $graduates = Collaborator::selectRaw('substr(last_name,1,1) as initial, GROUP_CONCAT(CONCAT(last_name, ", ", name) ORDER BY name SEPARATOR "###") as people')
             ->where('type', 'egresado')->groupBy('initial')->get();
 
-        return response()->view('website.us.asamblea-general', ['students' => $students, 'graduates' => $graduates]);
+        return response()->view('website.us.general-assembly', ['students' => $students, 'graduates' => $graduates]);
         // return response()->json(['collaborators' => $collaborators]);
     }
     public function getComiteconsultivo()
@@ -35,7 +35,7 @@ class WebsiteController extends Controller
         $students = Collaborator::selectRaw('substr(last_name,1,1) as initial, GROUP_CONCAT(CONCAT(last_name, ", ", name) ORDER BY name SEPARATOR "###") as people')
             ->where('type', 'estudiante')->groupBy('initial')->get();
 
-        return response()->view('website.us.comite-consultivo', ['students' => $students]);
+        return response()->view('website.us.advisory-committee', ['students' => $students]);
         // return response()->json(['collaborators' => $collaborators]);
     }
 

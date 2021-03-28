@@ -45,6 +45,9 @@ Route::get('/publicaciones', [WebsiteController::class, 'getPublications']);
 Route::get('/publicaciones/{id}', [WebsiteController::class, 'getPublication']);
 
 // Eventos
+Route::get('/eventos', function () {
+    return view('website.events');
+});
 
 // Contacto
 Route::get('/contacto', function () {

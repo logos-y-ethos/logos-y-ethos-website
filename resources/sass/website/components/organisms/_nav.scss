@@ -68,6 +68,7 @@
 @media screen and (max-width: 600px) {
     .nav{
         padding: 0;
+        transition: height 0.25s ease;
     }
     .nav a:first-child {
         top: 0;
@@ -92,6 +93,7 @@
         -webkit-font-smoothing: antialiased;
         font-weight: bolder;
         color: white;
+        transition: content 0.25s ease-out;
     }
     .nav a:first-child img {
         margin: 10px;
@@ -120,11 +122,11 @@
         top: 0;
     }
     .nav.responsive a {
+        width: 100%;
         float: none;
         display: flex;
         align-items: center;
         text-align: left;
-        width: 100%;
     }
     .nav.responsive a:first-child {
         width: 50px;
@@ -134,5 +136,10 @@
         color: white;
         text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
         text-emphasis-color: #A64253; */
+    }
+    .nav.responsive a.icon .icon-menu::before {
+        // content: '\2715';
+        // color: white;
+        content: url('/images/icons/close.svg');
     }
 }

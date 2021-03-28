@@ -4,23 +4,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding: 10px 70px;
+    padding: 15px 5%;
     background-color: colors.$background-dark-color;
     color: colors.$text-light-color;
 
-    div {
-        padding: 10px;
-        text-align: center;
-    }
-
-    :nth-child(1) {
+    .contact {
         text-align: left;
 
         a,
-        span {
+        div {
             display: flex;
             align-items: center;
             margin: 5px;
+            gap: 5px;
             color: colors.$text-light-color;
         }
 
@@ -28,29 +24,42 @@
             width: 50px;
         }
     }
+
+    .copyright {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .social {
+        padding-right: 10px;
+        text-align: right;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .footer {
         flex-direction: column-reverse;
         grid-template-columns: 100%;
-        padding: 10px 10px;
+        padding: 5% 5%;
 
-        :nth-child(1) {
+        .contact {
             grid-row: 3;
             svg {
                 width: 30px;
             }
-        }
+            div {
+                display: flex;
+                justify-content: space-between;
 
-        :nth-child(3) {
-            grid-row: 2;
-            a {
-                svg {
-                    width: 30px;
-                    margin: 0 5px;
+                span {
+                    display: flex;
                 }
             }
+        }
+
+        .social {
+            padding: 2.5% 0;
+            text-align: center;
         }
     }
 }

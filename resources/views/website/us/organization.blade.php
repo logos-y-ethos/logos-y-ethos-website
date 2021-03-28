@@ -1,6 +1,6 @@
 @extends('layouts.website')
 
-@section('title', '| Consejo Directivo')
+@section('title', '| Organización')
 
 @section('nav')
 
@@ -28,19 +28,19 @@
             <div class="content">
                 <p>
                     <div class="title">
-                        <h4>Presidenta</h4>Diana Isabel Asto Paredes<br />
+                        <h4>Presidenta:</h4>Diana Isabel Asto Paredes<br />
                     </div>
                     <a href="#">dasto@unitru.edu.pe</a>
                 </p>
                 <p>
                     <div class="title">
-                        <h4>Secretario</h4>Brayan Micael Linares Oyos<br />
+                        <h4>Secretario:</h4>Brayan Micael Linares Oyos<br />
                     </div>
                     <a href="#">blinares@unitru.edu.pe</a>
                 </p>
                 <p>
                     <div class="title">
-                        <h4>Tesorera</h4>Mercedes Liliana Polo Gonzalez<br />
+                        <h4>Tesorera:</h4>Mercedes Liliana Polo Gonzalez<br />
                     </div>
                     <a href="#">mlpolog@unitru.edu.pe</a>
                 </p>
@@ -48,11 +48,11 @@
         </article>
         <article>
             <h2>Asamblea General</h2>
-            <a href="{{ url('/nosotros/asamblea-general') }}">Ver más</a>
+            <a href="{{ url('/nosotros/asamblea-general') }}">Ver miembros</a>
         </article>
         <article>
             <h2>Comité Consultivo</h2>
-            <a href="{{ url('/nosotros/comite-consultivo') }}">Ver más</a>
+            <a href="{{ url('/nosotros/comite-consultivo') }}">Ver miembros</a>
         </article>
     </section>
 
