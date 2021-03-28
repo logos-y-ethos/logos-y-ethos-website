@@ -22,7 +22,6 @@
     <div>
 
         <section class="contact-section" style="background: url({{ asset('images/contact/contact-bg.png') }}); background-position: top; background-size: cover;">
-            <img src="{{ asset('images/contact/contact-banner.png') }}" alt="">
                 <header>
                     <h1>CONTACTO</h1>
                 </header>
