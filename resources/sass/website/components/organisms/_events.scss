@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    background-image: linear-gradient(#888888, #18212a);
+    // background-image: radial-gradient(#888888, #18212a);
 
     article {
         height: 300px;
@@ -42,7 +44,7 @@
     .events-container {
         padding: 10%;
         grid-template-columns: auto;
-        grid-template-rows: auto auto ;
+        grid-template-rows: auto auto;
 
         article {
             border-radius: 5px;

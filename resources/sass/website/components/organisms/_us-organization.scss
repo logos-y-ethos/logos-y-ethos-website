@@ -1,8 +1,14 @@
 @use '../../../base/colors';
 
+.us-container.us-container-organization {
+    margin: 0;
+    background-image: linear-gradient(#888888, #18212a);
+    background-image: radial-gradient(#888888, #18212a);
+}
+
 .organization-container {
     min-height: calc(100vh - 70px - 163px - 98.8px - 65px);
-    padding: 5% 0;
+    padding: 5% 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
@@ -101,6 +107,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .organization-container {
+        padding: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
 

@@ -11,49 +11,51 @@
 @section('content')
 
     <header style="
-                background: url({{ asset('images/section-us-bg.png') }});
-                background-position: center;
-                background-size: cover;
-                color: white">
+                    background: url({{ asset('images/section-us-bg.png') }});
+                    background-position: center;
+                    background-size: cover;
+                    color: white">
         <h1>NOSOTROS</h1>
     </header>
 
     @include('website.components.sub-menu', ['active' => 'organizacion'])
 
-    <section class="us-container organization-container">
-        <article>
-            <button class="collapsible">
-                <h2>Consejo Directivo</h2>
-            </button>
-            <div class="content">
-                <p>
+    <section class="us-container us-container-organization">
+        <div class="organization-container">
+            <article>
+                <button class="collapsible">
+                    <h2>Consejo Directivo</h2>
+                </button>
+                <div class="content">
+                    <p>
                     <div class="title">
                         <h4>Presidenta:</h4>Diana Isabel Asto Paredes<br />
                     </div>
                     <a href="#">dasto@unitru.edu.pe</a>
-                </p>
-                <p>
+                    </p>
+                    <p>
                     <div class="title">
                         <h4>Secretario:</h4>Brayan Micael Linares Oyos<br />
                     </div>
                     <a href="#">blinares@unitru.edu.pe</a>
-                </p>
-                <p>
+                    </p>
+                    <p>
                     <div class="title">
                         <h4>Tesorera:</h4>Mercedes Liliana Polo Gonzalez<br />
                     </div>
                     <a href="#">mlpolog@unitru.edu.pe</a>
-                </p>
-            </div>
-        </article>
-        <article>
-            <h2>Asamblea General</h2>
-            <a href="{{ url('/nosotros/asamblea-general') }}">Ver miembros</a>
-        </article>
-        <article>
-            <h2>Comité Consultivo</h2>
-            <a href="{{ url('/nosotros/comite-consultivo') }}">Ver miembros</a>
-        </article>
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2>Asamblea General</h2>
+                <a href="{{ url('/nosotros/asamblea-general') }}">Ver miembros</a>
+            </article>
+            <article>
+                <h2>Comité Consultivo</h2>
+                <a href="{{ url('/nosotros/comite-consultivo') }}">Ver miembros</a>
+            </article>
+        </div>
     </section>
 
 @endsection

@@ -57,6 +57,12 @@
     align-items: flex-start;
     gap: 50px;
     padding: 50px 0;
+    background-image: linear-gradient(rgb(140, 140, 140), #18212a);
+}
+
+.contact-sponsor {
+    height: 350px;
+    background-color: colors.$background-section-color;
 }
 
 /* Extra small devices (phones, 600px and down) */

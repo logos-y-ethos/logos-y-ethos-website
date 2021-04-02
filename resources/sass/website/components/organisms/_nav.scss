@@ -34,6 +34,22 @@
     top: 10px;
     left: 150px;
     z-index: 100;
+
+    animation-name: nav-logo;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    @keyframes nav-logo {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
 }
 
 .nav a:first-child img {
@@ -66,7 +82,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .nav{
+    .nav {
         padding: 0;
         transition: height 0.25s ease;
     }
@@ -85,9 +101,9 @@
         color: white;
     }
     .nav a.icon .icon-menu::before {
-        content: '\2630';
+        content: "\2630";
         display: inline-block;
-        font: normal normal normal 14px/1 'Open Sans';
+        font: normal normal normal 14px/1 "Open Sans";
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
@@ -140,6 +156,6 @@
     .nav.responsive a.icon .icon-menu::before {
         // content: '\2715';
         // color: white;
-        content: url('/images/icons/close.svg');
+        content: url("/images/icons/close.svg");
     }
 }

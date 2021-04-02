@@ -1,7 +1,7 @@
 @use '../../../base/colors';
 
 .sub-nav {
-    &-wrapper{
+    &-wrapper {
         filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.5));
     }
 
@@ -24,9 +24,24 @@
         color: colors.$text-light-color;
     }
 
-    .social-icons{
+    .social-icons {
         display: flex;
         align-items: center;
         column-gap: 10px;
+    }
+
+    animation-name: sub-nav;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    @keyframes sub-nav {
+        0% {
+            margin-top: -25px;
+        }
+        100% {
+            margin-top: -0px;
+        }
     }
 }

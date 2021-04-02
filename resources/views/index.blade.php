@@ -13,7 +13,6 @@
     <header class="home-header">
         <p>ASOCIACIÓN CÍRCULO DE ESTUDIOS</p>
         <h1>LOGOS Y ETHOS</h1>
-
     </header>
 
     <main class="home-container">
