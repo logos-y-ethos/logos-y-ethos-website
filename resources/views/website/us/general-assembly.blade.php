@@ -22,16 +22,16 @@
 
     <h2>ASAMBLEA GENERAL</h2>
 
-    <section class="us-container collaborators-list">
+    <h3 class="general-assembly-subheader">Miembros activos</h3>
 
-        <h3>Miembros activos</h3>
+    <section class="us-container general-assembly-list">
 
-        @foreach ($students as $student)
+        @foreach ($members as $member)
 
-            <div class="collaborators-list-item">
-                <h3>{{ $student->initial }} </h3>
+            <div class="general-assembly-list-item">
+                <h3>{{ $member->initial }} </h3>
                 <ul>
-                    @foreach (explode('###', $student->people) as $people)
+                    @foreach (explode('###', $member->people) as $people)
                         <li class="">{{ $people }}</li>
                     @endforeach
                 </ul>
@@ -41,16 +41,16 @@
 
     </section>
 
-    <section class="us-container collaborators-list">
+    <h3 class="general-assembly-subheader">Colaboradores</h3>
 
-        <h3>Colaboradores</h3>
+    <section class="us-container general-assembly-list">
 
-        @foreach ($graduates as $graduate)
+        @foreach ($collaborators as $collaborator)
 
-            <div class="collaborators-list-item">
-                <h3>{{ $graduate->initial }} </h3>
+            <div class="general-assembly-list-item">
+                <h3>{{ $collaborator->initial }} </h3>
                 <ul>
-                    @foreach (explode('###', $graduate->people) as $people)
+                    @foreach (explode('###', $collaborator->people) as $people)
                         <li class="">{{ $people }}</li>
                     @endforeach
                 </ul>

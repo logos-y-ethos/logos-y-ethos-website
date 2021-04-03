@@ -1,6 +1,6 @@
 @use '../../../base/colors';
 
-.collaborators-list {
+.advisory-comitee-list {
     min-height: calc(50vh - 235px);
 
     display: grid;
@@ -31,7 +31,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .collaborators-list {
+    .advisory-comitee-list {
         min-height: calc(100vh - 510px);
 
         grid-template-columns: repeat(1, 1fr);

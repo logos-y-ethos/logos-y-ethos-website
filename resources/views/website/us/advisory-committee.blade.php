@@ -22,14 +22,14 @@
 
     <h2>COMITÉ CONSULTIVO</h2>
 
-    <section class="us-container collaborators-list">
+    <section class="us-container advisory-comitee-list">
 
-        @foreach ($students as $student)
+        @foreach ($members as $member)
 
-            <div class="collaborators-list-item">
-                <h3>{{ $student->initial }} </h3>
+            <div class="advisory-comitee-list-item">
+                <h3>{{ $member->initial }} </h3>
                 <ul>
-                    @foreach (explode('###', $student->people) as $people)
+                    @foreach (explode('###', $member->people) as $people)
                         <li class="">{{ $people }}</li>
                     @endforeach
                 </ul>

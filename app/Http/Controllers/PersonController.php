@@ -31,6 +31,11 @@ class PersonController extends Controller
         // return response()->json(['collaborators' => $collaborators]);
     }
 
+    public function indexAdvisoryComiteeMembers()
+    {
+        $members = Person::where('type','comite consultivo')->get();
+        return response()->view('admin.advisory-committee.index', ['members' => $members ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -63,6 +68,21 @@ class PersonController extends Controller
         return redirect('admin/colaboradores');
     }
 
+    public function storeActiveMember(Request $request)
+    {
+        $member = new Person($request->all());
+        $member->type = 'miembro activo';
+        $member->save();
+        return redirect('admin/miembros-activos');
+    }
+
+    public function storeAdvisoryComiteeMember(Request $request)
+    {
+        $member = new Person($request->all());
+        $member->type = 'comite consultivo';
+        $member->save();
+        return redirect('admin/comite-consultivo');
+    }
 
     /**
      * Display the specified resource.
@@ -92,6 +112,17 @@ class PersonController extends Controller
         return view('admin.collaborators.edit', ['collaborator' => $collaborator ]);
     }
 
+    public function editActiveMember($id)
+    {
+        $member = Person::find($id);
+        return view('admin.active-members.edit', ['member' => $member ]);
+    }
+
+    public function editAdvisoryComiteeMember($id)
+    {
+        $member = Person::find($id);
+        return view('admin.advisory-committee.edit', ['member' => $member ]);
+    }
 
     /**
      * Update the specified resource in storage.
@@ -113,6 +144,22 @@ class PersonController extends Controller
         return redirect('admin/colaboradores');
     }
 
+    public function updateActiveMember(Request $request, $id)
+    {
+        $member = Person::find($id);
+        $member->fill($request->all());
+        $member->save();
+        return redirect('admin/miembros-activos');
+    }
+
+    public function updateAdvisoryComiteeMember(Request $request, $id)
+    {
+        $member = Person::find($id);
+        $member->fill($request->all());
+        $member->save();
+        return redirect('admin/comite-consultivo');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -130,6 +177,20 @@ class PersonController extends Controller
         $collaborator->delete();
         return redirect('admin/colaboradores');
         // return response()->json(['collaborator' => $collaborator]);
+    }
+
+    public function destroyActiveMember($id)
+    {
+        $member = Person::find($id);
+        $member->delete();
+        return redirect('admin/miembros-activos');
+    }
+
+    public function destroyAdvisoryComiteeMember($id)
+    {
+        $member = Person::find($id);
+        $member->delete();
+        return redirect('admin/comite-consultivo');
     }
 
 }

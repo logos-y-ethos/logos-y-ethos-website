@@ -1,30 +1,30 @@
 @extends('layouts.admin')
 
-@section('title', 'Miembros Activos')
+@section('title', 'Comité Consultivo')
 
 @section('side-bar')
 
-    @include('admin.components.side-bar', ['active' => 'miembros activos'])
+    @include('admin.components.side-bar', ['active' => 'comite consultivo'])
 
 @endsection
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Miembros Activos'])
+    @include('../admin/components/title-bar', ['title' => 'Comité Consultivo'])
 
     <div class="module-container">
 
         <h5>
-            {{-- <a class="breadcrumb-link" href="{{ url('/admin/colaboradores') }}">Lista de Colaboradores</a> / --}}
-            Editar Miembro Activo N° {{ $member->id }}
+            {{-- <a class="breadcrumb-link" href="{{ url('/admin/comite-consultivo') }}">Lista de Colaboradores</a> / --}}
+            Editar Miembro del Comité Consultivo N° {{ $member->id }}
         </h5>
 
-        <a class="button view-all-button" href="{{ url('/admin/miembros-activos') }}">
+        <a class="button view-all-button" href="{{ url('/admin/comite-consultivo') }}">
             Ver Todo
         </a>
 
         <div class="form-container">
-            <form method="POST" action="{{ url('/admin/miembros-activos/editar/' . $member->id) }}">
+            <form method="POST" action="{{ url('/admin/comite-consultivo/editar/' . $member->id) }}">
                 @csrf
 
                 <div class="form-group">

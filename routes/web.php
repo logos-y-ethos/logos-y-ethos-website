@@ -35,8 +35,8 @@ Route::get('/nosotros/secretarias', function () {
     return view('website.us.secretaries');
 });
 Route::get('/nosotros/organizacion', [WebsiteController::class, 'getOrganization']);
-Route::get('/nosotros/asamblea-general', [WebsiteController::class, 'getAsambleaGeneral']);
-Route::get('/nosotros/comite-consultivo', [WebsiteController::class, 'getComiteConsultivo']);
+Route::get('/nosotros/asamblea-general', [WebsiteController::class, 'getGeneralAssembly']);
+Route::get('/nosotros/comite-consultivo', [WebsiteController::class, 'getAdvisoryComitee']);
 
 
 // Publicaciones
@@ -79,10 +79,10 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     Route::get('/miembros-activos/agregar', function () {
         return view('admin.active-members.add');
     });
-    Route::post('/miembros-activos/agregar', [PersonController::class, 'storeCollaborator']);
-    Route::get('/miembros-activos/borrar/{id}', [PersonController::class, 'destroyCollaborator']);
-    Route::get('/miembros-activos/editar/{id}', [PersonController::class, 'editCollaborator']);
-    Route::post('/miembros-activos/editar/{id}', [PersonController::class, 'updateCollaborator']);
+    Route::post('/miembros-activos/agregar', [PersonController::class, 'storeActiveMember']);
+    Route::get('/miembros-activos/borrar/{id}', [PersonController::class, 'destroyActiveMember']);
+    Route::get('/miembros-activos/editar/{id}', [PersonController::class, 'editActiveMember']);
+    Route::post('/miembros-activos/editar/{id}', [PersonController::class, 'updateActiveMember']);
 
     // Colaboradores
     Route::get('/colaboradores', [PersonController::class, 'indexCollaborators']);
@@ -93,6 +93,16 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     Route::get('/colaboradores/borrar/{id}', [PersonController::class, 'destroyCollaborator']);
     Route::get('/colaboradores/editar/{id}', [PersonController::class, 'editCollaborator']);
     Route::post('/colaboradores/editar/{id}', [PersonController::class, 'updateCollaborator']);
+
+    // Comité Consultivo
+    Route::get('/comite-consultivo', [PersonController::class, 'indexAdvisoryComiteeMembers']);
+    Route::get('/comite-consultivo/agregar', function () {
+        return view('admin.advisory-committee.add');
+    });
+    Route::post('/comite-consultivo/agregar', [PersonController::class, 'storeAdvisoryComiteeMember']);
+    Route::get('/comite-consultivo/borrar/{id}', [PersonController::class, 'destroyAdvisoryComiteeMember']);
+    Route::get('/comite-consultivo/editar/{id}', [PersonController::class, 'editAdvisoryComiteeMember']);
+    Route::post('/comite-consultivo/editar/{id}', [PersonController::class, 'updateAdvisoryComiteeMember']);
 
     // Eventos
     Route::get('/eventos', function () {

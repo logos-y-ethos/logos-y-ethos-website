@@ -12,16 +12,20 @@
         margin: 0;
         font-family: typography.$headings-font;
         font-weight: 600;
+        animation-name: home-header;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
     }
     h1 {
         padding: 0;
+        animation-name: home-header;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
     }
-
-    animation-name: home-header;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
 
     @keyframes home-header {
         0% {
