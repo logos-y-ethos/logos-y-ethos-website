@@ -37,20 +37,6 @@
                     <input type="text" id="last_name" name="last_name" required value={{ $collaborator->last_name }}>
                 </div>
 
-                <div class="form-group">
-                    <b>Tipo: </b>
-                    <label class="label-radio">
-                        <input type="radio" name="type" value="estudiante" required
-                            {{ $collaborator->type === 'estudiante' ? 'checked' : '' }}>
-                        Estudiante :
-                    </label>
-                    <label class="label-radio">
-                        <input type="radio" name="type" value="egresado" required
-                            {{ $collaborator->type === 'egresado' ? 'checked' : '' }}>
-                        Egresado
-                    </label>
-                </div>
-
                 <button class="button save-button">Guardar</button>
 
             </form>

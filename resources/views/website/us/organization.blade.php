@@ -11,10 +11,10 @@
 @section('content')
 
     <header style="
-                    background: url({{ asset('images/section-us-bg.png') }});
-                    background-position: center;
-                    background-size: cover;
-                    color: white">
+            background: url({{ asset('images/section-us-bg.png') }});
+            background-position: center;
+            background-size: cover;
+            color: white">
         <h1>NOSOTROS</h1>
     </header>
 
@@ -27,24 +27,14 @@
                     <h2>Consejo Directivo</h2>
                 </button>
                 <div class="content">
-                    <p>
-                    <div class="title">
-                        <h4>Presidenta:</h4>Diana Isabel Asto Paredes<br />
-                    </div>
-                    <a href="#">dasto@unitru.edu.pe</a>
-                    </p>
-                    <p>
-                    <div class="title">
-                        <h4>Secretario:</h4>Brayan Micael Linares Oyos<br />
-                    </div>
-                    <a href="#">blinares@unitru.edu.pe</a>
-                    </p>
-                    <p>
-                    <div class="title">
-                        <h4>Tesorera:</h4>Mercedes Liliana Polo Gonzalez<br />
-                    </div>
-                    <a href="#">mlpolog@unitru.edu.pe</a>
-                    </p>
+                    @foreach ($directors as $director)
+                        <p>
+                        <div class="title">
+                            <h4>{{ $director->position }}:</h4>{{ $director->name . ' ' . $director->last_name }}<br />
+                        </div>
+                        <a href="mailto:{{ $director->mail }}">{{ $director->mail }}</a>
+                        </p>
+                    @endforeach
                 </div>
             </article>
             <article>

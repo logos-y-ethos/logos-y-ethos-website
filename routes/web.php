@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\CollaboratorController;
+use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\UserController;
 
@@ -33,9 +34,7 @@ Route::get('/nosotros', function () {
 Route::get('/nosotros/secretarias', function () {
     return view('website.us.secretaries');
 });
-Route::get('/nosotros/organizacion', function () {
-    return view('website.us.organization');
-});
+Route::get('/nosotros/organizacion', [WebsiteController::class, 'getOrganization']);
 Route::get('/nosotros/asamblea-general', [WebsiteController::class, 'getAsambleaGeneral']);
 Route::get('/nosotros/comite-consultivo', [WebsiteController::class, 'getComiteConsultivo']);
 
@@ -75,20 +74,30 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     Route::post('/publicaciones/agregar', [PublicationController::class, 'store']);
     Route::get('/publicaciones/borrar/{id}', [PublicationController::class, 'destroy']);
 
+    // Miembros Activos
+    Route::get('/miembros-activos', [PersonController::class, 'indexActiveMembers']);
+    Route::get('/miembros-activos/agregar', function () {
+        return view('admin.active-members.add');
+    });
+    Route::post('/miembros-activos/agregar', [PersonController::class, 'storeCollaborator']);
+    Route::get('/miembros-activos/borrar/{id}', [PersonController::class, 'destroyCollaborator']);
+    Route::get('/miembros-activos/editar/{id}', [PersonController::class, 'editCollaborator']);
+    Route::post('/miembros-activos/editar/{id}', [PersonController::class, 'updateCollaborator']);
+
+    // Colaboradores
+    Route::get('/colaboradores', [PersonController::class, 'indexCollaborators']);
+    Route::get('/colaboradores/agregar', function () {
+        return view('admin.collaborators.add');
+    });
+    Route::post('/colaboradores/agregar', [PersonController::class, 'storeCollaborator']);
+    Route::get('/colaboradores/borrar/{id}', [PersonController::class, 'destroyCollaborator']);
+    Route::get('/colaboradores/editar/{id}', [PersonController::class, 'editCollaborator']);
+    Route::post('/colaboradores/editar/{id}', [PersonController::class, 'updateCollaborator']);
+
     // Eventos
     Route::get('/eventos', function () {
         return view('admin.dashboard');
     });
-
-    // Colaboradores
-    Route::get('/colaboradores', [CollaboratorController::class, 'index']);
-    Route::get('/colaboradores/agregar', function () {
-        return view('admin.collaborators.add');
-    });
-    Route::post('/colaboradores/agregar', [CollaboratorController::class, 'store']);
-    Route::get('/colaboradores/borrar/{id}', [CollaboratorController::class, 'destroy']);
-    Route::get('/colaboradores/editar/{id}', [CollaboratorController::class, 'edit']);
-    Route::post('/colaboradores/editar/{id}', [CollaboratorController::class, 'update']);
 
     // Usuarios
     Route::get('/usuarios', [UserController::class, 'index']);

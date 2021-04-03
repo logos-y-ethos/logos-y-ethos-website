@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Publication;
 use App\Models\Collaborator;
+use App\Models\Person;
 use Throwable;
 
 class WebsiteController extends Controller
@@ -73,5 +74,15 @@ class WebsiteController extends Controller
 
         return response()->view('website.publications', ['publications' => $publications, 'publicationToShow' => $publicationToShow]);
         // return response()->json(['publicationToShow' => $publicationToShow]);
+    }
+
+    /**
+     * NOSOTROS
+     */
+    public function getOrganization()
+    {
+        $directors = Person::where('type', 'consejo directivo')->orderBy('order')->get();
+
+        return response()->view('website.us.organization', ['directors' => $directors]);
     }
 }

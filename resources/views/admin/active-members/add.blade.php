@@ -1,16 +1,16 @@
 @extends('layouts.admin')
 
-@section('title', 'Colaboradores')
+@section('title', 'Miembros Activos')
 
 @section('side-bar')
 
-    @include('admin.components.side-bar', ['active' => 'colaboradores'])
+    @include('admin.components.side-bar', ['active' => 'miembros activos'])
 
 @endsection
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Colaboradores'])
+    @include('../admin/components/title-bar', ['title' => 'Miembros Activos'])
 
     <div class="module-container">
 

@@ -10,7 +10,7 @@
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Publicaciones'])
+    @include('../admin/components/title-bar', ['title' => 'Usuarios'])
 
     <div class="module-container">
 
