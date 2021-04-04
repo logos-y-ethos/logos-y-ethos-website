@@ -1,22 +1,22 @@
 @extends('layouts.admin')
 
-@section('title', 'Miembros Activos')
+@section('title', 'Consejo Directivo')
 
 @section('side-bar')
 
-    @include('admin.components.side-bar', ['active' => 'miembros activos'])
+    @include('admin.components.side-bar', ['active' => 'consejo directivo'])
 
 @endsection
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Miembros Activos'])
+    @include('../admin/components/title-bar', ['title' => 'Consejo Directivo'])
 
     <div class="module-container">
 
-        <h5>Lista de Miembros Activos</h5>
+        <h5>Lista de Miembros del Consejo Directivo</h5>
 
-        <a class="button add-button" href="{{ url('/admin/miembros-activos/agregar') }}">
+        <a class="button add-button" href="{{ url('/admin/consejo-directivo/agregar') }}">
             Agregar
             @include('../admin/components/icons/add')
         </a>
@@ -25,9 +25,11 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Cargo</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Tipo</th>
+                    <th>Correo</th>
+                    <th>Orden</th>
                     <th>Fecha Creación</th>
                     <th>Fecha Actualización</th>
                     <th></th>
@@ -37,13 +39,15 @@
                 @forelse ($members as $member)
                     <tr>
                         <td>{{ $member->id }}</td>
+                        <td>{{ ucfirst($member->position) }}</td>
                         <td>{{ $member->name }}</td>
                         <td>{{ $member->last_name }}</td>
-                        <td>{{ ucfirst($member->type) }}</td>
+                        <td>{{ $member->mail }}</td>
+                        <td>{{ $member->order }}°</td>
                         <td>{{ $member->created_at }}</td>
                         <td>{{ $member->updated_at }}</td>
                         <td class="text-center">
-                            <a href="{{ url('/admin/miembros-activos/editar/' . $member->id) }}">
+                            <a href="{{ url('/admin/consejo-directivo/editar/' . $member->id) }}">
                                 @include('../admin/components/icons/edit')
                             </a>
                             <a href="#" onclick="openModal(this)" data-id="{{ $member->id }}">
@@ -69,7 +73,7 @@
                 <h4>¿Deseas borrar este registro?</h4>
             </div>
             <div class="modal-body">
-                <p>Miembro Activo N° <span id="modal-span-info"></span></p>
+                <p>Miembro del Consejo Directivo N° <span id="modal-span-info"></span></p>
             </div>
             <div class="modal-footer">
                 <button class="button cancel-button" onclick="hideModal()">Cancelar</button>
@@ -105,7 +109,7 @@
     }
 
     function deleteItem() {
-        if (idToDelete >= 0) location.assign(`{{ url('/admin/miembros-activos/borrar/') }}/${idToDelete}`);
+        if (idToDelete >= 0) location.assign(`{{ url('/admin/consejo-directivo/borrar/') }}/${idToDelete}`);
     }
 
 </script>

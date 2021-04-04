@@ -126,7 +126,7 @@
             <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="light"
                 href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            {{-- <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> --}}
+            <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
             {{-- Youtube --}}

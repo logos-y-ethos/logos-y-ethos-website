@@ -1241,6 +1241,7 @@ ul {
 .secretaries-list {
   margin-bottom: 30px;
   text-align: justify;
+  background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 .secretaries-list .collapsible {
@@ -1375,7 +1376,7 @@ ul {
 .us-container.us-container-organization {
   margin: 0;
   background-image: linear-gradient(#888888, #18212a);
-  background-image: radial-gradient(#888888, #18212a);
+  background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 .organization-container {

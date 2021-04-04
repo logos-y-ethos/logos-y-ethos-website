@@ -93,7 +93,7 @@
                 <p>
                     Es en este afán de superación académica que en el primer semestre de 2020, a iniciativa de Diana Asto
                     Paredes y Xiomara Roncal Cueva, junto a Brayan Linares Oyos, Mercedes Polo Gonzales, Alessandro Reymundo
-                    Vilca, José Carlos Rosario Sánchez, Milagros Aubanel Lozano Ulloa, María Helena Herrera Mendoza, María
+                    Vilca, Milagros Aubanel Lozano Ulloa, María Helena Herrera Mendoza, María
                     Alexandra Vásquez Correa, Norvin Mostacero Cabrera, Emily Lozano Rodríguez y Estefani Verde Rodríguez,
                     además, contando con la guía de la Dra. Victoria Mendoza Otiniano, se embarcan en el proyecto nominado
                     Círculo de Estudios Logos y Ethos.

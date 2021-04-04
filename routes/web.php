@@ -5,6 +5,7 @@ use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\CollaboratorController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PublicationController;
+use App\Http\Controllers\SecretaryController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -73,6 +74,26 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     });
     Route::post('/publicaciones/agregar', [PublicationController::class, 'store']);
     Route::get('/publicaciones/borrar/{id}', [PublicationController::class, 'destroy']);
+
+    // Secretarías
+    Route::get('/secretarias', [SecretaryController::class, 'indexSecretariesWithMembers']);
+    Route::get('/secretarias/agregar', function () {
+        return view('admin.directors.add');
+    });
+    Route::post('/secretarias/agregar', [SecretaryController::class, 'storeSecretarieMember']);
+    Route::get('/secretarias/borrar/{id}', [SecretaryController::class, 'destroySecretarieMember']);
+    Route::get('/secretarias/editar/{id}', [SecretaryController::class, 'editSecretarieMember']);
+    Route::post('/secretarias/editar/{id}', [SecretaryController::class, 'updateSecretarieMember']);
+
+    // Consejo Directivo
+    Route::get('/consejo-directivo', [PersonController::class, 'indexDirectors']);
+    Route::get('/consejo-directivo/agregar', function () {
+        return view('admin.directors.add');
+    });
+    Route::post('/consejo-directivo/agregar', [PersonController::class, 'storeDirector']);
+    Route::get('/consejo-directivo/borrar/{id}', [PersonController::class, 'destroyDirector']);
+    Route::get('/consejo-directivo/editar/{id}', [PersonController::class, 'editDirector']);
+    Route::post('/consejo-directivo/editar/{id}', [PersonController::class, 'updateDirector']);
 
     // Miembros Activos
     Route::get('/miembros-activos', [PersonController::class, 'indexActiveMembers']);

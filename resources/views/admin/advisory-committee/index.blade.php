@@ -62,7 +62,6 @@
     </div>
 
     <div id="delete-modal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
@@ -70,7 +69,7 @@
                 <h4>¿Deseas borrar este registro?</h4>
             </div>
             <div class="modal-body">
-                <p>Miembros Activo N° <span id="modal-span-info"></span></p>
+                <p>Miembro del Comité Consultivo N° <span id="modal-span-info"></span></p>
             </div>
             <div class="modal-footer">
                 <button class="button cancel-button" onclick="hideModal()">Cancelar</button>

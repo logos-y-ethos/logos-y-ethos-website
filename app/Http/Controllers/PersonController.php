@@ -17,6 +17,12 @@ class PersonController extends Controller
         //
     }
 
+    public function indexDirectors()
+    {
+        $members = Person::where('type','consejo directivo')->get();
+        return response()->view('admin.directors.index', ['members' => $members ]);
+    }
+
     public function indexCollaborators()
     {
         $collaborators = Person::where('type','colaborador')->get();
@@ -57,6 +63,15 @@ class PersonController extends Controller
     {
         //
     }
+
+    public function storeDirector(Request $request)
+    {
+        $member = new Person($request->all());
+        $member->type = 'consejo directivo';
+        $member->save();
+        return redirect('admin/consejo-directivo');
+    }
+
 
     public function storeCollaborator(Request $request)
     {
@@ -106,6 +121,12 @@ class PersonController extends Controller
         //
     }
 
+    public function editDirector($id)
+    {
+        $member = Person::find($id);
+        return view('admin.directors.edit', ['member' => $member ]);
+    }
+
     public function editCollaborator($id)
     {
         $collaborator = Person::find($id);
@@ -134,6 +155,14 @@ class PersonController extends Controller
     public function update(Request $request, $id)
     {
         //
+    }
+
+    public function updateDirector(Request $request, $id)
+    {
+        $member = Person::find($id);
+        $member->fill($request->all());
+        $member->save();
+        return redirect('admin/consejo-directivo');
     }
 
     public function updateCollaborator(Request $request, $id)
@@ -169,6 +198,13 @@ class PersonController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function destroyDirector($id)
+    {
+        $member = Person::find($id);
+        $member->delete();
+        return redirect('admin/consejo-directivo');
     }
 
     public function destroyCollaborator($id)

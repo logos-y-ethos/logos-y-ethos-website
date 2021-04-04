@@ -62,7 +62,6 @@
     </div>
 
     <div id="delete-modal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">

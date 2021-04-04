@@ -20,6 +20,11 @@ class Secretary extends Model
     protected $hidden = [
     ];
 
+    public function members()
+    {
+        return $this->hasMany(Person::class);
+    }
+
 }
 
 

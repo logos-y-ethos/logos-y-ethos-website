@@ -88,7 +88,7 @@
                     </article>
                     <article>
                         <p>
-                            La Secretaría de Publicaciones, es la encargada de publicar y difundir textos de índole
+                            La Secretaría de Publicaciones es la encargada de publicar y difundir textos de índole
                             académica concernientes a la disciplina jurídica y las demás áreas que se relacionan con esta.
                             Asimismo, tiene como una de sus facultades principales la elaboración y planificación de
                             proyectos académicos para estudiantes, docentes, investigadores y operadores del derecho en su
