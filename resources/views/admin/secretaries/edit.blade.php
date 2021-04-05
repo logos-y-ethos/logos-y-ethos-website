@@ -1,52 +1,62 @@
 @extends('layouts.admin')
 
-@section('title', 'Consejo Directivo')
+@section('title', 'Secretarías')
 
 @section('side-bar')
 
-    @include('admin.components.side-bar', ['active' => 'consejo directivo'])
+    @include('admin.components.side-bar', ['active' => 'secretarias'])
 
 @endsection
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Consejo Directivo'])
+    @include('../admin/components/title-bar', ['title' => 'Secretarías'])
 
     <div class="module-container">
 
         <h5>
-            {{-- <a class="breadcrumb-link" href="{{ url('/admin/consejo-directivo') }}">Lista de Colaboradores</a> / --}}
-            Editar Miembro del Consejo Directivo N° {{ $member->id }}
+            {{-- <a class="breadcrumb-link" href="{{ url('/admin/secretarias') }}">Lista de Colaboradores</a> / --}}
+            Editar Miembro de las Secretarías N° {{ $member->id }}
         </h5>
 
-        <a class="button view-all-button" href="{{ url('/admin/consejo-directivo') }}">
+        <a class="button view-all-button" href="{{ url('/admin/secretarias') }}">
             Ver Todo
         </a>
 
         <div class="form-container">
-            <form method="POST" action="{{ url('/admin/consejo-directivo/editar/' . $member->id) }}">
+            <form method="POST" action="{{ url('/admin/secretarias/editar/' . $member->id) }}" enctype="multipart/form-data">
                 @csrf
 
                 <div class="form-group">
                     <b>Cargo:</b>
-                    <input type="text" id="position" name="position" required value={{ $member->position }}>
+                    <input type="text" name="position" required value="{{ $member->position }}">
                 </div>
                 <div class="form-group">
                     <b>Nombre:</b>
-                    <input type="text" id="name" name="name" required value={{ $member->name }}>
+                    <input type="text" name="name" required value="{{ $member->name }}">
                 </div>
                 <div class="form-group">
                     <b>Apellidos:</b>
-                    <input type="text" id="last_name" name="last_name" required value={{ $member->last_name }}>
+                    <input type="text" name="last_name" required value="{{ $member->last_name }}">
                 </div>
                 <div class="form-group">
                     <b>Correo:</b>
-                    <input type="email" id="mail" name="mail" required value={{ $member->mail }}>
+                    <input type="email" name="mail" required value="{{ $member->mail }}">
                 </div>
                 <div class="form-group">
                     <b>Orden:</b>
-                    <input type="number" id="order" name="order" required value={{ $member->order }}>
+                    <input type="number" name="order" required value="{{ $member->order }}">
                 </div>
+                <div class="form-group">
+                    <b>Foto:</b>
+                    <img src="{{ asset('/images/us/' . $member->photo) }}" alt="" width="150">
+                    <input type="file" name="photo" required}>
+                </div>
+                <select name="secretary_id">
+                    @foreach ($secretaries as $secretary)
+                        <option value="{{ $secretary->id }}" @if($member->secretary_id === $secretary->id) selected @endif>{{ $secretary->title}}</option>
+                    @endforeach
+                </select>
 
                 <button class="button save-button">Guardar</button>
 

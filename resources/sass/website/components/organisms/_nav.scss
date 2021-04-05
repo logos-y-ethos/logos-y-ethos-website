@@ -1,4 +1,5 @@
 @use '../../../base/colors';
+@use '../../../base/typography';
 
 .nav {
     font-variant-caps: all-small-caps;
@@ -28,6 +29,8 @@
     padding: 0 2.5%;
     transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
+    // font-family: typography.$headings-font;
+    // font-weight: 700;
 }
 
 .nav a:first-child {

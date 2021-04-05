@@ -72,7 +72,6 @@ class PersonController extends Controller
         return redirect('admin/consejo-directivo');
     }
 
-
     public function storeCollaborator(Request $request)
     {
         $collaborator = new Person($request->all());

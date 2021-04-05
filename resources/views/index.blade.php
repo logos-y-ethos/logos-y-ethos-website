@@ -57,7 +57,7 @@
         <div class="us-container">
 
             <section class="section-with-photo section-with-photo-right">
-                <img src="{{ asset('images/us/us-1.jpg') }}" alt="">
+                <img src="{{ asset('images/us/us-1.png') }}" alt="">
                 <div class="section-description">
                     <p>
                         El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la

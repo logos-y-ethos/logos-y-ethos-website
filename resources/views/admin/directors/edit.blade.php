@@ -29,23 +29,23 @@
 
                 <div class="form-group">
                     <b>Cargo:</b>
-                    <input type="text" id="position" name="position" required value={{ $member->position }}>
+                    <input type="text" id="position" name="position" required value="{{ $member->position }}">
                 </div>
                 <div class="form-group">
                     <b>Nombre:</b>
-                    <input type="text" id="name" name="name" required value={{ $member->name }}>
+                    <input type="text" id="name" name="name" required value="{{ $member->name }}">
                 </div>
                 <div class="form-group">
                     <b>Apellidos:</b>
-                    <input type="text" id="last_name" name="last_name" required value={{ $member->last_name }}>
+                    <input type="text" id="last_name" name="last_name" required value="{{ $member->last_name }}">
                 </div>
                 <div class="form-group">
                     <b>Correo:</b>
-                    <input type="email" id="mail" name="mail" required value={{ $member->mail }}>
+                    <input type="email" id="mail" name="mail" required value="{{ $member->mail }}">
                 </div>
                 <div class="form-group">
                     <b>Orden:</b>
-                    <input type="number" id="order" name="order" required value={{ $member->order }}>
+                    <input type="number" id="order" name="order" required value="{{ $member->order }}">
                 </div>
 
                 <button class="button save-button">Guardar</button>

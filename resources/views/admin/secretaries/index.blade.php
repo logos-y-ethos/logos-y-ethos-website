@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Consejo Directivo')
+@section('title', 'Secretarías')
 
 @section('side-bar')
 
@@ -16,7 +16,7 @@
 
         <h5>Miembros de las Secretarías</h5>
 
-        <a class="button add-button" href="{{ url('/admin/consejo-directivo/agregar') }}">
+        <a class="button add-button" href="{{ url('/admin/secretarias/agregar') }}">
             Agregar
             @include('../admin/components/icons/add')
         </a>

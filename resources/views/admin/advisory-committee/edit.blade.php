@@ -29,12 +29,12 @@
 
                 <div class="form-group">
                     <b>Nombre:</b>
-                    <input type="text" id="name" name="name" required value={{ $member->name }}>
+                    <input type="text" id="name" name="name" required value="{{ $member->name }}">
                 </div>
 
                 <div class="form-group">
                     <b>Apellidos:</b>
-                    <input type="text" id="last_name" name="last_name" required value={{ $member->last_name }}>
+                    <input type="text" id="last_name" name="last_name" required value="{{ $member->last_name }}">
                 </div>
 
                 <button class="button save-button">Guardar</button>

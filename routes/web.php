@@ -78,12 +78,12 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     // Secretarías
     Route::get('/secretarias', [SecretaryController::class, 'indexSecretariesWithMembers']);
     Route::get('/secretarias/agregar', function () {
-        return view('admin.directors.add');
+        return view('admin.secretaries.add');
     });
-    Route::post('/secretarias/agregar', [SecretaryController::class, 'storeSecretarieMember']);
-    Route::get('/secretarias/borrar/{id}', [SecretaryController::class, 'destroySecretarieMember']);
-    Route::get('/secretarias/editar/{id}', [SecretaryController::class, 'editSecretarieMember']);
-    Route::post('/secretarias/editar/{id}', [SecretaryController::class, 'updateSecretarieMember']);
+    Route::post('/secretarias/agregar', [SecretaryController::class, 'storeSecretaryMember']);
+    Route::get('/secretarias/borrar/{id}', [SecretaryController::class, 'destroySecretaryMember']);
+    Route::get('/secretarias/editar/{id}', [SecretaryController::class, 'editSecretaryMember']);
+    Route::post('/secretarias/editar/{id}', [SecretaryController::class, 'updateSecretaryMember']);
 
     // Consejo Directivo
     Route::get('/consejo-directivo', [PersonController::class, 'indexDirectors']);

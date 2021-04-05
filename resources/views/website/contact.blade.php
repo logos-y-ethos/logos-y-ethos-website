@@ -96,7 +96,17 @@
         </section>
 
         <section class="contact-sponsor">
-            <h2>Auspiciador</h2>
+            <h3>Auspiciador</h3>
+            <div class="contact-sponsor-content">
+                <img src="{{ asset('images/contact/legales-trujillo.png') }}" alt="">
+                <p>
+                    <b>LIBRERÍA LEGALES TRUJILLO</b><br /><br />
+                    Calle Pizarro 540 Trujillo, Perú<br />
+                    <a href="tel:+51986738778"> 986738778</a><br />
+                    <a href="mailto:librerialegalestrujillo@gmail.com"> librerialegalestrujillo@gmail.com</a><br />
+                    <a href="https://www.facebook.com/legalestrujillo"> https://www.facebook.com/legalestrujillo</a><br />
+                </p>
+            </div>
         </section>
 
         <section class="contact-social-embeds">
@@ -126,7 +136,9 @@
             <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="light"
                 href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark"
+                href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
             {{-- Youtube --}}

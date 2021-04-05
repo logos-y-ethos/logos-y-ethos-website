@@ -25,7 +25,7 @@
         <h2>¿Quiénes somos?</h2>
 
         <section class="section-with-photo section-with-photo-right">
-            <img src="{{ asset('images/us/us-1.jpg') }}" alt="">
+            <img src="{{ asset('images/us/us-1.png') }}" alt="">
             <div class="section-description">
                 <p>
                     El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la
@@ -47,7 +47,7 @@
             <h3>
                 <span>MISIÓN</span>
             </h3>
-            <img src="{{ asset('images/us/us-2.png') }}" alt="">
+            <img src="{{ asset('images/us/mision.jpg') }}" alt="">
             <p>
                 Contribuir al desarrollo académico de la comunidad jurídica, liderando la investigación científica con ética
                 y calidad en las distintas áreas del derecho. Así también, promover el crecimiento personal y profesional de
@@ -56,7 +56,7 @@
         </div>
         <div class="item">
             <h3><span>VISIÓN</span></h3>
-            <img src="{{ asset('images/us/us-2.png') }}" alt="">
+            <img src="{{ asset('images/us/vision.jpg') }}" alt="">
             <p>
                 Ser el mayor referente académico en investigación jurídica y producción de textos científicos, además de
                 contribuir al desarrollo integral de nuestros asociados.
@@ -102,7 +102,7 @@
         </section>
 
         <section class="section-with-photo section-with-photo-right">
-            <img src="{{ asset('images/us/us-4.jpg') }}" alt="">
+            <img src="{{ asset('images/us/us-4.png') }}" alt="">
             <div class="section-description">
                 <p>
                     Contribuyendo así, a fomentar y preparar a los estudiantes de pregrado para el desarrollo de la

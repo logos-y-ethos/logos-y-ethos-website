@@ -1116,11 +1116,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   padding: 0 150px;
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 22px;
+  font-weight: 600;
   background: #231852;
 }
 
@@ -1188,7 +1184,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 40px 150px;
-  background-color: #9ea3b0;
+  background-image: radial-gradient(#d2d2d2, #4f6173);
   text-align: center;
 }
 
@@ -1238,10 +1234,20 @@ ul {
   }
 }
 
+.secretaries-main-container {
+  padding: 25px 0;
+  background-image: radial-gradient(#d2d2d2, #4f6173);
+}
+
+.secretaries-main-container h2 {
+  margin: 0;
+  padding-bottom: 25px;
+  color: #ffffff;
+}
+
 .secretaries-list {
   margin-bottom: 30px;
   text-align: justify;
-  background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 .secretaries-list .collapsible {
@@ -1251,7 +1257,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #9ea3b0;
+  background-color: #1c1c23;
   cursor: pointer;
   border: none;
   outline: none;
@@ -1274,7 +1280,7 @@ ul {
 
 .secretaries-list .active,
 .secretaries-list .collapsible:hover {
-  background-color: #9ea3b0;
+  background-color: #1c1c23;
 }
 
 .secretaries-list .active:after {
@@ -1288,6 +1294,9 @@ ul {
   margin-bottom: 10px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  background-color: #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .secretaries-list .content .left-content {
@@ -1799,7 +1808,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
-  background-image: linear-gradient(#888888, #18212a);
+  background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 .events-container article {
@@ -1893,6 +1902,42 @@ ul {
   margin-right: 10px;
 }
 
+.contact-sponsor {
+  padding: 25px 10%;
+  background-color: #eeeeee;
+}
+
+.contact-sponsor h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.contact-sponsor-content {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-sponsor-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.contact-sponsor-content p {
+  text-align: center;
+}
+
+.contact-sponsor-content p a {
+  color: #660001;
+}
+
+.contact-sponsor-content p a:hover {
+  text-decoration: underline;
+}
+
 .contact-social-embeds {
   min-height: 300px;
   display: flex;
@@ -1900,12 +1945,7 @@ ul {
   align-items: flex-start;
   gap: 50px;
   padding: 50px 0;
-  background-image: linear-gradient(#8c8c8c, #18212a);
-}
-
-.contact-sponsor {
-  height: 350px;
-  background-color: #eeeeee;
+  background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 /* Extra small devices (phones, 600px and down) */
