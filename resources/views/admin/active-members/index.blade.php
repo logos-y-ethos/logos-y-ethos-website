@@ -27,7 +27,7 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Tipo</th>
+                    {{-- <th>Tipo</th> --}}
                     <th>Fecha Creación</th>
                     <th>Fecha Actualización</th>
                     <th></th>
@@ -39,7 +39,7 @@
                         <td>{{ $member->id }}</td>
                         <td>{{ $member->name }}</td>
                         <td>{{ $member->last_name }}</td>
-                        <td>{{ ucfirst($member->type) }}</td>
+                        {{-- <td>{{ ucfirst($member->type) }}</td> --}}
                         <td>{{ $member->created_at }}</td>
                         <td>{{ $member->updated_at }}</td>
                         <td class="text-center">

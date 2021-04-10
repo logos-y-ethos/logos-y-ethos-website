@@ -27,7 +27,7 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Tipo</th>
+                    {{-- <th>Tipo</th> --}}
                     <th>Fecha Creación</th>
                     <th>Fecha Actualización</th>
                     <th></th>
@@ -39,7 +39,7 @@
                         <td>{{ $collaborator->id }}</td>
                         <td>{{ $collaborator->name }}</td>
                         <td>{{ $collaborator->last_name }}</td>
-                        <td>{{ ucfirst($collaborator->type) }}</td>
+                        {{-- <td>{{ ucfirst($collaborator->type) }}</td> --}}
                         <td>{{ $collaborator->created_at }}</td>
                         <td>{{ $collaborator->updated_at }}</td>
                         <td class="text-center">

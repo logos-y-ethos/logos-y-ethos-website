@@ -1,8 +1,10 @@
 @use '../../../base/colors';
 
 .title-bar{
-    width: 100%;
+    width: calc(100% + 70px);
     height: 50px;
+    margin-top: 70px;
+    margin-left: -70px;
     display: flex;
     justify-content: center;
     align-items: center;

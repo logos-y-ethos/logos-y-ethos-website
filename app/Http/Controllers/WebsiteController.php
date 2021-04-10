@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Publication;
 use App\Models\Collaborator;
 use App\Models\Person;
+use App\Models\Secretary;
 use Throwable;
 
 class WebsiteController extends Controller
@@ -58,6 +59,12 @@ class WebsiteController extends Controller
     /**
      * ************************************* NOSOTROS *************************************
      */
+
+    public function getSecretaries()
+    {
+        $secretaries = Secretary::all();
+        return response()->view('website.us.secretaries', ['secretaries' => $secretaries ]);
+    }
 
     public function getOrganization()
     {

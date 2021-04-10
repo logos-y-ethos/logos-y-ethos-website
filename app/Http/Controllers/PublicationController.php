@@ -96,7 +96,8 @@ class PublicationController extends Controller
      */
     public function edit($id)
     {
-        //
+        $publication = Publication::find($id);
+        return view('admin.publications.edit', ['publication' => $publication ]);
     }
 
     /**
