@@ -16,6 +16,12 @@ class SecretaryController extends Controller
         return response()->view('admin.secretaries.index', ['secretaries' => $secretaries ]);
     }
 
+    public function createSecretaryMember()
+    {
+        $secretaries = Secretary::all();
+        return response()->view('admin.secretaries.add', ['secretaries' => $secretaries ]);
+    }
+
     public function storeSecretaryMember(Request $request)
     {
         $member = new Person($request->all());

@@ -49,13 +49,24 @@
     }
 }
 
+.contact-cards {
+    padding-top: 40px;
+    // background-image: linear-gradient(rgb(140, 140, 140), #18212a);
+    background-image: radial-gradient(#d2d2d2, #4f6173);
+}
+
 .contact-sponsor {
-    padding: 25px 10%;
+    width: 550px;
+    margin: 0 auto;
+    padding: 10px 0 25px 0;
     background-color: colors.$background-section-color;
+    border-radius: 10px;
 
     h3 {
+        width: auto;
         margin: 0;
         padding-bottom: 10px;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -65,8 +76,8 @@
         justify-content: center;
         gap: 20px;
         img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 5px;
         }
         p {
@@ -88,8 +99,6 @@
     align-items: flex-start;
     gap: 50px;
     padding: 50px 0;
-    // background-image: linear-gradient(rgb(140, 140, 140), #18212a);
-    background-image: radial-gradient(#d2d2d2, #4f6173);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -117,6 +126,16 @@
             }
         }
     }
+    .contact-sponsor {
+        width: 90%;
+
+        &-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     .contact-social-embeds {
         flex-wrap: wrap;
     }

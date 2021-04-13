@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Publication;
 use App\Models\Collaborator;
+use App\Models\Event;
 use App\Models\Person;
 use App\Models\Secretary;
 use Throwable;
@@ -15,8 +16,9 @@ class WebsiteController extends Controller
     public function index() {
 
         $publications = Publication::orderBy('id', 'DESC')->limit(2)->get();
+        $events = Event::orderBy('date', 'DESC')->orderBy('time', 'DESC')->limit(3)->get();
 
-        return response()->view('index', ['publications' => $publications]);
+        return response()->view('index', ['publications' => $publications, 'events' => $events]);
         // return response()->json(['publications' => $publications]);
     }
 
@@ -31,6 +33,10 @@ class WebsiteController extends Controller
         return response()->view('website.us.collaborators', ['students' => $students, 'graduates' => $graduates]);
         // return response()->json(['collaborators' => $collaborators]);
     }
+
+        /**
+     * ************************************* PUBLICACIONES *************************************
+     */
 
     public function getPublications()
     {
@@ -89,6 +95,22 @@ class WebsiteController extends Controller
 
         return response()->view('website.us.advisory-committee', ['members' => $members]);
         // return response()->json(['collaborators' => $collaborators]);
+    }
+
+    /**
+     * ************************************* EVENTOS *************************************
+     */
+
+    public function getAcademicEvents()
+    {
+        $events = Event::where('type', 'academico')->orderBy('date', 'DESC')->orderBy('time', 'DESC')->get();
+        return response()->view('website.events.academics', ['events' => $events]);
+    }
+
+    public function getFinancialEvents()
+    {
+        $events = Event::where('type', 'financiamiento')->orderBy('date', 'DESC')->orderBy('time', 'DESC')->get();
+        return response()->view('website.events.financial', ['events' => $events]);
     }
 
 }

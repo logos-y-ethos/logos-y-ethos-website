@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\CollaboratorController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\SecretaryController;
@@ -44,8 +45,10 @@ Route::get('/publicaciones/{id}', [WebsiteController::class, 'getPublication']);
 
 // Eventos
 Route::get('/eventos', function () {
-    return view('website.events');
+    return view('website.events.index');
 });
+Route::get('/eventos/academicos', [WebsiteController::class, 'getAcademicEvents']);
+Route::get('/eventos/financiamiento', [WebsiteController::class, 'getFinancialEvents']);
 
 // Contacto
 Route::get('/contacto', function () {
@@ -81,16 +84,13 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
         return view('admin.publications.add');
     });
     Route::post('/publicaciones/agregar', [PublicationController::class, 'store']);
-    Route::get('/usuarios/editar/{id}', [PublicationController::class, 'edit']);
-    Route::post('/usuarios/editar/{id}', [PublicationController::class, 'update']);
-
+    Route::get('/publicaciones/editar/{id}', [PublicationController::class, 'edit']);
+    Route::post('/publicaciones/editar/{id}', [PublicationController::class, 'update']);
     Route::get('/publicaciones/borrar/{id}', [PublicationController::class, 'destroy']);
 
     // Secretarías
     Route::get('/secretarias', [SecretaryController::class, 'indexSecretariesWithMembers']);
-    Route::get('/secretarias/agregar', function () {
-        return view('admin.secretaries.add');
-    });
+    Route::get('/secretarias/agregar', [SecretaryController::class, 'createSecretaryMember']);
     Route::post('/secretarias/agregar', [SecretaryController::class, 'storeSecretaryMember']);
     Route::get('/secretarias/editar/{id}', [SecretaryController::class, 'editSecretaryMember']);
     Route::post('/secretarias/editar/{id}', [SecretaryController::class, 'updateSecretaryMember']);
@@ -137,9 +137,14 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     Route::get('/comite-consultivo/borrar/{id}', [PersonController::class, 'destroyAdvisoryComiteeMember']);
 
     // Eventos
-    Route::get('/eventos', function () {
-        return view('admin.dashboard');
+    Route::get('/eventos', [EventController::class, 'index']);
+    Route::get('/eventos/agregar', function () {
+        return view('admin.events.add');
     });
+    Route::post('/eventos/agregar', [EventController::class, 'store']);
+    Route::get('/eventos/editar/{id}', [EventController::class, 'edit']);
+    Route::post('/eventos/editar/{id}', [EventController::class, 'update']);
+    Route::get('/eventos/borrar/{id}', [EventController::class, 'destroy']);
 
     // Usuarios
     Route::get('/usuarios', [UserController::class, 'index']);
@@ -151,6 +156,13 @@ Route::prefix('admin')->middleware(['auth'])->group( function () {
     Route::post('/usuarios/editar/{id}', [UserController::class, 'update']);
     Route::get('/usuarios/reset-password/{id}', [UserController::class, 'resetPassword']);
     Route::get('/usuarios/borrar/{id}', [UserController::class, 'destroy']);
+
+    //Cambiar contraseña
+    Route::get('/configuracion', function () {
+        return view('admin.configuration');
+    });
+    Route::post('/usuarios/cambiar-mi-password', [UserController::class, 'changeMyPassword']);
+
 
 });
 

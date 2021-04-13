@@ -9,7 +9,7 @@
     <meta name="description" content="El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la Escuela de Derecho de la Universidad Nacional de Trujillo." />
     <meta name="keywords" content="circulo estudios logos ethos, circulo estudios derecho">
 
-    <title>A.C.E. Logos y Ethos @yield('title')</title>
+    <title>Logos y Ethos @yield('title')</title>
 
     <!-- Icon -->
     <link rel="shortcut icon" href="{{ asset('images/favicons/favicon-16x16.png') }}" type="image/x-icon">

@@ -21,11 +21,11 @@
     <section class="events-container">
         <article>
             <h2>Eventos académicos</h2>
-            <a href="#">Ver eventos</a>
+            <a href="{{ url('/eventos/academicos') }}">Ver eventos</a>
         </article>
         <article>
             <h2>Eventos de financiamiento</h2>
-            <a href="#">Ver eventos</a>
+            <a href="{{ url('/eventos/financiamiento') }}">Ver eventos</a>
         </article>
     </section>
 

@@ -122,4 +122,16 @@ class UserController extends Controller
         Auth::loginUsingId($id);
         return redirect('admin/usuarios');
     }
+
+    public function changeMyPassword(Request $request)
+    {
+        $request->validate([
+            'password' => 'required|string|min:8',
+        ]);
+        $user = User::find(Auth::user()->id);
+        $user->password = Hash::make($request->password);
+        $user->save();
+        Auth::logout();
+        return redirect('admin/dashboard');
+    }
 }

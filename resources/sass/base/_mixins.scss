@@ -1,11 +1,12 @@
 @mixin scroll-bar() {
     &::-webkit-scrollbar {
         width: 12px;
-        box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.5);
+        // box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.5);
     }
-
+    
     &::-webkit-scrollbar-track {
         background-color: #ffffff;
+        border: solid #eee 2px;
         // border-radius: 10px;
     }
     

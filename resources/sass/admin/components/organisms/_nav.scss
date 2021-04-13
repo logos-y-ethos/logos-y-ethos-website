@@ -32,17 +32,18 @@
 .nav a:first-child {
     position: absolute;
     top: 10px;
-    left: 70px;
+    left: 5px;
     z-index: 100;
 }
 
 .nav a:first-child img {
     background-color: white;
-    border: solid colors.$background-gray-color 5px;
+    // border: solid colors.$background-gray-color 5px;
     border-radius: 50%;
-    width: 100px;
+    width: 50px;
     transition: transform 0.1s, box-shadow 0.1s;
     transition-timing-function: ease-in-out;
+    // box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.5);
 }
 

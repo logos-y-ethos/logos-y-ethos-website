@@ -24,7 +24,8 @@
         </a>
 
         <div class="form-container">
-            <form method="POST" action="{{ url('/admin/secretarias/editar/' . $member->id) }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ url('/admin/secretarias/editar/' . $member->id) }}"
+                enctype="multipart/form-data">
                 @csrf
 
                 <div class="form-group">
@@ -50,13 +51,20 @@
                 <div class="form-group">
                     <b>Foto:</b>
                     <img src="{{ asset('/images/us/' . $member->photo) }}" alt="" width="150">
+                </div>
+                <div class="form-group">
+                    <b></b>
                     <input type="file" name="photo" required}>
                 </div>
-                <select name="secretary_id">
-                    @foreach ($secretaries as $secretary)
-                        <option value="{{ $secretary->id }}" @if($member->secretary_id === $secretary->id) selected @endif>{{ $secretary->title}}</option>
-                    @endforeach
-                </select>
+                <div class="form-group">
+                    <b>Secretaría:</b>
+                    <select name="secretary_id">
+                        @foreach ($secretaries as $secretary)
+                            <option value="{{ $secretary->id }}" @if ($member->secretary_id === $secretary->id) selected @endif>
+                                {{ $secretary->title }}</option>
+                        @endforeach
+                    </select>
+                </div>
 
                 <button class="button save-button">Guardar</button>
 

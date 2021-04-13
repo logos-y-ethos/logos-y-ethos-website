@@ -51,6 +51,14 @@
                     <b>Foto:</b>
                     <input type="file" name="photo" required>
                 </div>
+                <div class="form-group">
+                    <b>Secretaría:</b>
+                    <select name="secretary_id" required>
+                        @foreach ($secretaries as $secretary)
+                            <option value="{{ $secretary->id }}">{{ $secretary->title }}</option>
+                        @endforeach
+                    </select>
+                </div>
 
                 <button class="button save-button">Guardar</button>
 

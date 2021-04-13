@@ -21,6 +21,25 @@
     margin: 15px 15%;
     justify-content: center;
 
+    > .item:nth-child(1) {
+        background-color: #5d8500;
+    }
+    > .item:nth-child(2) {
+        background-color: #856a00;
+    }
+    > .item:nth-child(3),
+    > .item:nth-child(4),
+    > .item:nth-child(5),
+    > .item:nth-child(6) {
+        background-color: #005785;
+    }
+    > .item:nth-child(7) {
+        background-color: #7e8500;
+    }
+    > .item:nth-child(8) {
+        background-color: #590085;
+    }
+
     .item {
         display: flex;
         justify-content: flex-start;
@@ -50,7 +69,8 @@
             gap: 10px;
             padding-left: 15px;
             background-color: colors.$background-light-color;
-            border: 2px solid #231852;
+            border: 2px solid #222222;
+            border-left: none;
             box-sizing: border-box;
             a {
                 display: flex;

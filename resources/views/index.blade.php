@@ -118,7 +118,42 @@
 
         <section class="section-last-events">
             <h2>Eventos</h2>
-            <a href="#"> Ver todos los eventos </a>
+            <section class="events-list-container" style="min-height: 0">
+                @foreach ($events as $event)
+                    <article class="event-item">
+                        @if ($event->date || $event->time)
+                            <span class="datetime">{{ $event->date . ' ' . $event->time }}</span>
+                        @endif
+                        <div class="head">
+                            <a href="{{ $event->link }}">
+                                @if ($event->photo)
+                                    <div style="
+                                            /* width: 200px; */
+                                            height: 250px;
+                                            background: url({{ asset('images/events/' . $event->photo) }});
+                                            background-position: center;
+                                            background-size: cover;
+                                            color: white">
+                                    </div>
+                                    {{-- <img src="{{ asset('images/events/' . $event->photo) }}" alt=""> --}}
+                                @else
+                                    <div style="
+                                            /* width: 200px; */
+                                            height: 250px;
+                                            background: url({{ asset('images/events/default.png') }});
+                                            background-position: center;
+                                            background-size: cover;
+                                            color: white">
+                                    </div>
+                                @endif
+                                <div class="title"><b>{{ $event->title }}</b></div>
+                            </a>
+                        </div>
+                        {{-- <p class="description" style="color: white">{{ $event->description }}</p> --}}
+                    </article>
+                @endforeach
+            </section>
+            <a class="go-to-all-events" href="{{ url('/eventos') }}"> Ver todos los eventos </a>
         </section>
 
         <section class="section-collaborators">

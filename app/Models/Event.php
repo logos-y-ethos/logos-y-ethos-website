@@ -6,21 +6,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Publication extends Model
+class Event extends Model
 {
     use HasFactory;
     use SoftDeletes;
 
     protected $fillable = [
-        'code',
-        'title',
-        'cover',
-        'date',
-        'author',
-        'description',
         'type',
-        'file',
-        'url',
-        'number_pages',
+        'title',
+        'description',
+        'date',
+        'time',
+        'photo',
+        'medium',
+        'link',
+        'registerer',
     ];
+
 }

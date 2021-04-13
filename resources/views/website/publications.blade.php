@@ -13,13 +13,13 @@
     <div class="publications-container">
         <div class="publicactions-aside">
             <header>
-                <h1>PUBLICACIONES</h1>
+                <img src="{{ asset('images/publications/essentia-legis.png') }}" alt="Essentia Legis">
             </header>
             @foreach ($publications as $publication)
                 <div class="card">
                     REVISTA N° {{ $publication->code }}<br>
                     <span>{{ $publication->title }}</span>
-                    <img src="{{ asset('files' . $publication->cover) }}" alt="">
+                    <img src="{{ asset('files' . $publication->cover) }}" alt="{{ $publication->title }}">
                     <a href="{{url('/publicaciones/'.$publication->id)}}">VER REVISTA</a>
                 </div>
             @endforeach
@@ -62,7 +62,7 @@
                         <div class="about">
                             REVISTA N° {{ $publicationToShow->code }}<br>
                             <span>{{ $publicationToShow->title }}</span><br/>
-                            <img src="{{ asset('files' . $publicationToShow->cover) }}" alt="">
+                            <img src="{{ asset('files' . $publicationToShow->cover) }}" alt="{{ $publicationToShow->title }}">
                         </div>
                         <div class="description">
                             <p>

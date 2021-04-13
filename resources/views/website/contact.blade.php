@@ -95,54 +95,61 @@
             </div>
         </section>
 
-        <section class="contact-sponsor">
-            <h3>Auspiciador</h3>
-            <div class="contact-sponsor-content">
-                <img src="{{ asset('images/contact/legales-trujillo.png') }}" alt="">
-                <p>
-                    <b>LIBRERÍA LEGALES TRUJILLO</b><br /><br />
-                    Calle Pizarro 540 Trujillo, Perú<br />
-                    <a href="tel:+51986738778"> 986738778</a><br />
-                    <a href="mailto:librerialegalestrujillo@gmail.com"> librerialegalestrujillo@gmail.com</a><br />
-                    <a href="https://www.facebook.com/legalestrujillo"> https://www.facebook.com/legalestrujillo</a><br />
-                </p>
-            </div>
-        </section>
+        <section class="contact-cards">
 
-        <section class="contact-social-embeds">
-
-            <div class="fb-page" data-href="https://www.facebook.com/celogosyethos/" data-tabs="timeline, messages, events"
-                data-width="300px" data-height="" data-small-header="false" data-adapt-container-width="false"
-                data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/celogosyethos/" class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/celogosyethos/">Asociación Círculo de Estudios Logos y Ethos</a>
-                </blockquote>
+            <div class="contact-sponsor">
+                <h3>Auspiciador</h3>
+                <div class="contact-sponsor-content">
+                    <img src="{{ asset('images/contact/legales-trujillo.png') }}" alt="legales-trujillo">
+                    <p>
+                        <b>LIBRERÍA LEGALES TRUJILLO</b><br />
+                        <i>Librería Legales...garantía de buen servicio.</i><br /><br />
+                        Calle Pizarro 540 Trujillo, Perú<br />
+                        <a href="tel:+51986738778"> 986738778</a><br />
+                        <a href="mailto:librerialegalestrujillo@gmail.com"> librerialegalestrujillo@gmail.com</a><br />
+                        <a href="https://www.facebook.com/legalestrujillo">
+                            https://www.facebook.com/legalestrujillo</a><br />
+                    </p>
+                </div>
             </div>
 
-            {{-- Linkedin --}}
-            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
-            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
-            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
-            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
-            <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="es_ES" data-type="vertical"
-                data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link"
-                    href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos
-                    y Ethos</a></div>
-            {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+            <div class="contact-social-embeds">
+
+                <div class="fb-page" data-href="https://www.facebook.com/celogosyethos/"
+                    data-tabs="timeline, messages, events" data-width="300px" data-height="" data-small-header="false"
+                    data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/celogosyethos/" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/celogosyethos/">Asociación Círculo de Estudios Logos y Ethos</a>
+                    </blockquote>
+                </div>
+
+                {{-- Linkedin --}}
+                {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+                {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+                {{-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+                {{-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="es_ES" data-type="horizontal" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
+                <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="es_ES" data-type="vertical"
+                    data-theme="dark" data-vanity="acelogosyethos"><a class="LI-simple-link"
+                        href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios
+                        Logos
+                        y Ethos</a></div>
+                {{-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="acelogosyethos"><a class="LI-simple-link" href='https://pe.linkedin.com/in/acelogosyethos?trk=profile-badge'>Asociación Círculo de Estudios Logos y Ethos</a></div> --}}
 
 
-            {{-- Twitter --}}
-            {{-- <a href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow @ethos_y</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> --}}
-            <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="light"
-                href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark"
-                href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                {{-- Twitter --}}
+                {{-- <a href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow @ethos_y</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> --}}
+                <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="light"
+                    href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                {{-- <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-theme="dark"
+                    href="https://twitter.com/ethos_y?ref_src=twsrc%5Etfw">Tweets by ethos_y</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> --}}
 
 
-            {{-- Youtube --}}
-            {{-- <div id="ytplayer"></div> --}}
+                {{-- Youtube --}}
+                {{-- <div id="ytplayer"></div> --}}
+
+            </div>
 
         </section>
 

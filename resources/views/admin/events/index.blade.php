@@ -1,22 +1,22 @@
 @extends('layouts.admin')
 
-@section('title', 'Publicaciones')
+@section('title', 'Eventos')
 
 @section('side-bar')
 
-    @include('admin.components.side-bar', ['active' => 'publicaciones'])
+    @include('admin.components.side-bar', ['active' => 'eventos'])
 
 @endsection
 
 @section('content')
 
-    @include('../admin/components/title-bar', ['title' => 'Publicaciones'])
+    @include('../admin/components/title-bar', ['title' => 'Eventos'])
 
     <div class="module-container">
 
-        <h5>Lista de Publicaciones</h5>
+        <h5>Lista de Eventos</h5>
 
-        <a class="button add-button" href="{{ url('/admin/publicaciones/agregar') }}">
+        <a class="button add-button" href="{{ url('/admin/eventos/agregar') }}">
             Agregar
             @include('../admin/components/icons/add')
         </a>
@@ -25,45 +25,30 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Código</th>
-                    <th>Título</th>
-                    {{-- <th>Portada</th> --}}
-                    <th>Fecha</th>
-                    <th>Autor</th>
-                    {{-- <th>Descripción</th>
                     <th>Tipo</th>
-                    <th>Ruta de Archivo</th>
-                    <th>Ruta de URL</th>
-                    <th>N° Páginas</th> --}}
+                    <th>Título</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
                     <th>Fecha Creación</th>
                     <th>Fecha Actualización</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                @forelse ($publications as $publication)
+                @forelse ($events as $event)
                     <tr>
-                        <td>{{ $publication->id }}</td>
-                        <td>{{ $publication->code }}</td>
-                        <td>{{ $publication->title }}</td>
-                        {{-- <td>{{ $publication->cover }}</td> --}}
-                        <td>{{ $publication->date }}</td>
-                        <td>{{ $publication->author }}</td>
-                        {{-- <td>{{ $publication->description }}</td>
-                        <td>{{ $publication->type }}</td>
-                        <td>{{ $publication->file }}</td>
-                        <td>{{ $publication->url }}</td>
-                        <td>{{ $publication->number_pages }}</td> --}}
-                        <td>{{ $publication->created_at }}</td>
-                        <td>{{ $publication->updated_at }}</td>
+                        <td>{{ $event->id }}</td>
+                        <td>{{ ucfirst($event->type) }}</td>
+                        <td>{{ $event->title }}</td>
+                        <td>{{ $event->date }}</td>
+                        <td>{{ $event->time }}</td>
+                        <td>{{ $event->created_at }}</td>
+                        <td>{{ $event->updated_at }}</td>
                         <td class="text-center">
-                            {{-- <a href="#">
-                                @include('../admin/components/icons/view')
-                            </a> --}}
-                            <a href="{{ url('/admin/publicaciones/editar/' . $publication->id) }}">
+                            <a href="{{ url('/admin/eventos/editar/' . $event->id) }}">
                                 @include('../admin/components/icons/edit')
                             </a>
-                            <a href="#" onclick="openModal(this)" data-id="{{ $publication->id }}">
+                            <a href="#" onclick="openModal(this)" data-id="{{ $event->id }}">
                                 @include('../admin/components/icons/remove')
                             </a>
                         </td>
@@ -79,7 +64,6 @@
     </div>
 
     <div id="delete-modal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
@@ -87,7 +71,7 @@
                 <h4>¿Deseas borrar este registro?</h4>
             </div>
             <div class="modal-body">
-                <p>Colaborador N° <span id="modal-span-info"></span></p>
+                <p>Evento N° <span id="modal-span-info"></span></p>
             </div>
             <div class="modal-footer">
                 <button class="button cancel-button" onclick="hideModal()">Cancelar</button>
@@ -123,7 +107,7 @@
     }
 
     function deleteItem() {
-        if (idToDelete >= 0) location.assign(`{{ url('/admin/publicaciones/borrar/') }}/${idToDelete}`);
+        if (idToDelete >= 0) location.assign(`{{ url('/admin/eventos/borrar/') }}/${idToDelete}`);
     }
 
 </script>
