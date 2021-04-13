@@ -27,7 +27,7 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Email</th>
-                    <th>Permisos</th>
+                    {{-- <th>Permisos</th> --}}
                     <th>Fecha Creación</th>
                     <th>Fecha Actualización</th>
                     <th></th>
@@ -39,7 +39,7 @@
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
-                        <td>{{ $user->role }}</td>
+                        {{-- <td>{!! implode('<br/>' , explode(',', $user->role)) !!}</td> --}}
                         <td>{{ $user->created_at }}</td>
                         <td>{{ $user->updated_at }}</td>
                         <td class="text-center">
@@ -56,7 +56,7 @@
                     </tr>
                 @empty
                     <tr>
-                        <td class="text-center" colspan="6">No hay datos</td>
+                        <td class="text-center" colspan="5">No hay datos</td>
                     </tr>
                 @endforelse
             </tbody>

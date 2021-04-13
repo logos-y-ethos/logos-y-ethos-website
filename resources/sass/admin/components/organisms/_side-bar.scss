@@ -9,11 +9,11 @@
     // flex-direction: column;
     align-items: center;
     // margin-top: 3%;
-    background-color: colors.$background-main-color;
+    background-color: colors.$background-gray-color;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 
     >a:first-child{
-        background-color: #5a123d;
+        background-color: #420177;
     }
     >a:nth-child(2){
         background-color: #5d8500;
@@ -25,16 +25,18 @@
         background-color: #005785;
     }
     >a:nth-child(8){
-        background-color: #7e8500;
+        background-color: #909700;
     }
+    // Usuarios
     >a:nth-child(9){
-        background-color: #590085;
+        background-color: #008583;
     }
+    // Configuración
     >a:nth-child(10){
         background-color: #767676;
     }
     >form{
-        background-color: #2e2e2e;
+        background-color: #5a1225;
     }
 
 
@@ -49,7 +51,9 @@
         // padding-left: 15px;
 
         &:hover {
-            background-color: colors.$background-gray-color;
+            // background-color: colors.$background-section-color;
+            background-color: #222;
+            opacity: .95;
         }
 
         &.active {

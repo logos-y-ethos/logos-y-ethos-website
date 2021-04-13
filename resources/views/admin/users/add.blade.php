@@ -51,11 +51,85 @@
                     <b>Contraseña:</b>
                     <input type="password" name="password" required autocomplete="new-password">
                 </div>
+                <div class="form-group">
+                    <b>Permisos:</b>
+                    <div>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Publicaciones">
+                                Publicaciones
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Secretarías">
+                                Secretarías
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Consejo Directivo">
+                                Consejo Directivo
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Miembros Activos">
+                                Miembros Activos
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Colaboradores">
+                                Colaboradores
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Comité Consultivo">
+                                Comité Consultivo
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Eventos">
+                                Eventos
+                            </label>
+                        </p>
+                        <p>
+                            <label class="label-radio" onclick="updateRoleInput()">
+                                <input class="checkbox" type="checkbox" data-value="Usuarios">
+                                Usuarios
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <input type="text" id="role" name="role" hidden>
+
                 <button class="button save-button">Guardar</button>
 
             </form>
         </div>
 
     </div>
+
+@endsection
+
+@section('scripts')
+
+    <script>
+        function updateRoleInput() {
+            var boxes = document.getElementsByClassName('checkbox');
+            var checked = [];
+            for (var i = 0; boxes[i]; ++i) {
+                if (boxes[i].checked) {
+                    checked.push(boxes[i].getAttribute("data-value"));
+                }
+            }
+
+            var checkedStr = checked.join();
+            document.getElementById('role').value = checkedStr;
+        }
+    </script>
 
 @endsection

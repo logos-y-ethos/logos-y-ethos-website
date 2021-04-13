@@ -42,6 +42,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -52,12 +53,14 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'Administrador'
+            'role' => $request->role,
         ]);
 
         event(new Registered($user));
 
         return redirect('admin/usuarios');
+        // return response()->json(['request' => $request->role, 'asdas' => $request->name, 'asdass' => $request->all()]);
+
     }
 
     /**
