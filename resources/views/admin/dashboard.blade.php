@@ -11,8 +11,8 @@
 @section('content')
 
     <header class="dashboard-header">
-        <p>ASOCIACIÓN CÍRCULO DE ESTUDIOS</p>
-        <h1>LOGOS Y ETHOS</h1>
+        <p>ASOCIACIÓN</p>
+        <h1>"LOGOS Y ETHOS"</h1>
     </header>
 
     <section class="dashboard-container">

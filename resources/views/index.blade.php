@@ -2,6 +2,12 @@
 
 @section('title', '')
 
+@section('head')
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+@endsection
+
 @section('nav')
 
     @include('website.components.nav', ['active' => 'inicio'])
@@ -11,46 +17,142 @@
 @section('content')
 
     <header class="home-header">
-        <p>ASOCIACIÓN CÍRCULO DE ESTUDIOS</p>
-        <h1>LOGOS Y ETHOS</h1>
+        <p>ASOCIACIÓN</p>
+        <h1>"LOGOS Y ETHOS"</h1>
     </header>
 
     <main class="home-container">
 
-        @if (sizeof($publications) > 0)
-            <section class="section-home-news" style="
+        <!-- Slider main container -->
+        <div class="swiper-container" {{-- style="width: 100%; height: 300px" --}}>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div style="
+                            height: calc(100vh - 100px - 70px);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            font-size: 1.5rem;
+                            background: url({{ asset('images/home-hero-dark.png') }});
+                            background-position: center;
+                            background-size: cover;
+                            ">
+                        Bienvenido a Logos y Ethos
+                    </div>
+                </div>
+                @if (isset($publications[0]))
+                    <div class="swiper-slide">
+                        <section class="section-home-news" style="
                                 background: url({{ asset('images/home-hero-dark.png') }});
                                 background-position: center;
                                 background-size: cover;
-                            ">
-                <div class="new-title">
-                    <b>{{ $publications[0]->title }}</b>
-                </div>
-                <div class="new-image">
-                    <img src="{{ asset('files' . $publications[0]->cover) }}" alt="">
-                </div>
-                <div class="new-description">
-                    {!! nl2br($publications[0]->description) !!}
-                </div>
-                <div class="new-link">
-                    <a href="{{ url('/publicaciones/' . $publications[0]->id) }}" class="button button-highlight">IR A LA PUBLICACIÓN</a>
-                </div>
-            </section>
-        @else
-            <div style="
-                        height: calc(100vh - 100px - 70px);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: white;
-                        font-size: 1.5rem;
-                        background: url({{ asset('images/home-hero-dark.png') }});
-                        background-position: center;
-                        background-size: cover;
-                    ">
-                Bienvenido a Logos y Ethos
+                                                ">
+                            <div class="new-title">
+                                <b>{{ $publications[0]->title }}</b>
+                            </div>
+                            <div class="new-image">
+                                <img src="{{ asset('files' . $publications[0]->cover) }}" alt="">
+                            </div>
+                            <div class="new-description">
+                                {!! nl2br($publications[0]->description) !!}
+                            </div>
+                            <div class="new-link">
+                                <a href="{{ url('/publicaciones/' . $publications[0]->id) }}"
+                                    class="button button-highlight">IR A LA PUBLICACIÓN</a>
+                            </div>
+                        </section>
+                    </div>
+                @endif
+                @if (isset($publications[1]))
+                    <div class="swiper-slide">
+                        <section class="section-home-news" style="
+                                background: url({{ asset('images/home-hero-dark.png') }});
+                                background-position: center;
+                                background-size: cover;
+                                                ">
+                            <div class="new-title">
+                                <b>{{ $publications[1]->title }}</b>
+                            </div>
+                            <div class="new-image">
+                                <img src="{{ asset('files' . $publications[1]->cover) }}" alt="">
+                            </div>
+                            <div class="new-description">
+                                {!! nl2br($publications[1]->description) !!}
+                            </div>
+                            <div class="new-link">
+                                <a href="{{ url('/publicaciones/' . $publications[1]->id) }}"
+                                    class="button button-highlight">IR A LA PUBLICACIÓN</a>
+                            </div>
+                        </section>
+                    </div>
+                @endif
+                @if (isset($events[0]))
+                    <div class="swiper-slide">
+                        <section class="section-home-news" style="
+                                background: url({{ asset('images/home-hero-dark.png') }});
+                                background-position: center;
+                                background-size: cover;
+                                                ">
+                            <div class="new-title">
+                                <b>{{ $events[0]->title }}</b>
+                            </div>
+                            <div class="new-image">
+                                @if ($events[0]->photo)
+                                    <img src="{{ asset('images/events/' . $events[0]->photo) }}" alt="">
+                                @else
+                                    <img src="{{ asset('images/events/default.png') }}" alt="">
+                                @endif
+                            </div>
+                            <div class="new-description">
+                                {!! nl2br($events[0]->description) !!}
+                            </div>
+                            <div class="new-link">
+                                <a href="{{ $events[0]->link }}" class="button button-highlight">IR
+                                    AL EVENTO</a>
+                            </div>
+                        </section>
+                    </div>
+                @endif
+                @if (isset($events[1]))
+                    <div class="swiper-slide">
+                        <section class="section-home-news" style="
+                            background: url({{ asset('images/home-hero-dark.png') }});
+                            background-position: center;
+                            background-size: cover;
+                                            ">
+                            <div class="new-title">
+                                <b>{{ $events[1]->title }}</b>
+                            </div>
+                            <div class="new-image">
+                                @if ($events[1]->photo)
+                                    <img src="{{ asset('images/events/' . $events[1]->photo) }}" alt="">
+                                @else
+                                    <img src="{{ asset('images/events/default.png') }}" alt="">
+                                @endif
+                            </div>
+                            <div class="new-description">
+                                {!! nl2br($events[1]->description) !!}
+                            </div>
+                            <div class="new-link">
+                                <a href="{{ $events[0]->link }}" class="button button-highlight">IR
+                                    AL EVENTO</a>
+                            </div>
+                        </section>
+                    </div>
+                @endif
+
             </div>
-        @endif
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="color:white"></div>
+            <div class="swiper-button-next" style="color:white"></div>
+
+        </div>
 
         <h2>Sobre nosotros</h2>
 
@@ -60,8 +162,8 @@
                 <img src="{{ asset('images/us/us-1.png') }}" alt="">
                 <div class="section-description">
                     <p>
-                        El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la
-                        Escuela de Derecho de la Universidad Nacional de Trujillo.
+                        Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la Escuela de Derecho de la
+                        Universidad Nacional de Trujillo.
                     </p>
                     <p>
                         Nuestro objetivo es encontrar innovadoras soluciones a los conflictos que surgen en la sociedad,
@@ -166,13 +268,14 @@
                     <img src="{{ asset('images/home-collaborators/ius-360.png') }}" alt="ius-360">
                 </a>
                 <a href="https://icj.pe/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ asset('images/home-collaborators/insituto-de-capacitacion-juridica.png') }}" alt="insituto-de-capacitacion-juridica">
+                    <img src="{{ asset('images/home-collaborators/insituto-de-capacitacion-juridica.png') }}"
+                        alt="insituto-de-capacitacion-juridica">
                 </a>
             </div>
         </section>
 
         <section class="contact-section"
-            style="background: url({{ asset('images/contact/contact-bg.png') }}); background-position: top; background-size: cover; height: auto; border-bottom: solid rgba(0,0,0,.5) 25px;">
+            style="background: url({{ asset('images/contact/contact-bg.png') }}); background-position: top; background-size: cover; height: auto;">
             <header>
                 <h1>CONTACTO</h1>
             </header>
@@ -246,5 +349,30 @@
         </section>
 
     </main>
+
+@endsection
+
+@section('scripts')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: {
+                delay: 20000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
 
 @endsection

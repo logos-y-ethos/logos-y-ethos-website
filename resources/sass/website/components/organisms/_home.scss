@@ -183,6 +183,7 @@
             row-gap: 0;
 
             .new-image {
+                max-width: 80%;
                 grid-area: 1 / 1 / 4 / 2;
                 max-height: 170px;
             }

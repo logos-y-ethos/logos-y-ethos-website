@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Leví Arista">
-    <meta name="description" content="Sitio web del Círculo de Estudios de Estudios Logos y Ethos" />
-    <meta name="keywords" content="circulo estudios logos ethos, circulo estudios derecho">
+    <meta name="description" content="Sitio web de la Asociación Logos y Ethos" />
+    <meta name="keywords" content="asociacion logos ethos, asociacion derecho">
 
     <title>Logos y Ethos | Login </title>
 
@@ -38,8 +38,8 @@
 
             <header>
                 <img src="{{ asset('images/logos-y-ethos-logo.png') }}" alt="">
-                <p>CÍRCULO DE ESTUDIOS</p>
-                <h1>LOGOS Y ETHOS</h1>
+                <p>ASOCIACIÓN</p>
+                <h1>"LOGOS Y ETHOS"</h1>
             </header>
 
             <!-- Session Status -->

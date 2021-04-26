@@ -11,10 +11,10 @@
 @section('content')
 
     <header style="
-    background: url({{ asset('images/section-us-bg.png') }});
-    background-position: center;
-    background-size: cover;
-    color: white">
+        background: url({{ asset('images/section-us-bg.png') }});
+        background-position: center;
+        background-size: cover;
+        color: white">
         <h1>NOSOTROS</h1>
     </header>
 
@@ -28,8 +28,8 @@
             <img src="{{ asset('images/us/us-1.png') }}" alt="">
             <div class="section-description">
                 <p>
-                    El Círculo de Estudios Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la
-                    Escuela de Derecho de la Universidad Nacional de Trujillo.
+                    Logos y Ethos es una Asociación Civil fundada en 2020 por estudiantes de la Escuela de Derecho de la
+                    Universidad Nacional de Trujillo.
                 </p>
                 <p>
                     Nuestro objetivo es encontrar innovadoras soluciones a los conflictos que surgen en la sociedad,
@@ -96,7 +96,7 @@
                     Vilca, Milagros Aubanel Lozano Ulloa, María Helena Herrera Mendoza, María
                     Alexandra Vásquez Correa, Norvin Mostacero Cabrera, Emily Lozano Rodríguez y Estefani Verde Rodríguez,
                     además, contando con la guía de la Dra. Victoria Mendoza Otiniano, se embarcan en el proyecto nominado
-                    Círculo de Estudios Logos y Ethos.
+                    Logos y Ethos.
                 </p>
             </div>
         </section>
@@ -111,7 +111,7 @@
                     estos a través de la revista jurídica de la asociación.
                 </p>
                 <p>
-                    Hoy en día, aún queda un largo camino por recorrer, así, la Asociación Círculo de Estudios Logos y Ethos
+                    Hoy en día, aún queda un largo camino por recorrer, así, la Asociación Logos y Ethos
                     se encuentra comprometida a seguir trabajando ardua y disciplinadamente para alcanzar sus fines y
                     objetivos con éxito.
                 </p>
