@@ -32,15 +32,19 @@
                     <div style="
                             height: calc(100vh - 100px - 70px);
                             display: flex;
+                            flex-direction: column;
                             align-items: center;
                             justify-content: center;
                             color: white;
                             font-size: 1.5rem;
+                            font-family: 'EB Garamond';
                             background: url({{ asset('images/home-hero-dark.png') }});
                             background-position: center;
                             background-size: cover;
+                            text-align: center;
                             ">
-                        Bienvenido a Logos y Ethos
+                        Bienvenidos a Logos y Ethos
+                        <i>“Logos y Ethos, espíritu crítico y de investigación sobre la autonomía del pensamiento”</i>
                     </div>
                 </div>
                 @if (isset($publications[0]))
