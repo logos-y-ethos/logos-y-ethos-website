@@ -43,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($secretary->members as $member)
+                    @forelse ($secretary->members->sortBy('order') as $member)
                         <tr>
                             <td>{{ $member->id }}</td>
                             <td>{{ ucfirst($member->position) }}</td>

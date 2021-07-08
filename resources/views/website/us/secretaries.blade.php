@@ -34,7 +34,7 @@
                     <div class="content">
                         <div class="left-content">
                             <article class="members">
-                                @foreach ($secretary->members as $member)
+                                @foreach ($secretary->members->sortBy('order') as $member)
                                     <p>
                                         <b>{{ $member->position }}: </b>
                                         <i>{{ $member->name . ' ' . $member->last_name }}</i>
@@ -55,7 +55,7 @@
                             </article>
                         </div>
                         <div class="photos">
-                            @foreach ($secretary->members as $member)
+                            @foreach ($secretary->members->sortBy('order') as $member)
                                 <img src="{{ asset('images/us/' . $member->photo) }}" alt="">
                             @endforeach
                         </div>
