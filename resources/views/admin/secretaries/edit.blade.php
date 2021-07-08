@@ -60,7 +60,7 @@
                     <b>Secretaría:</b>
                     <select name="secretary_id">
                         @foreach ($secretaries as $secretary)
-                            <option value="{{ $secretary->id }}" @if ($member->secretary_id === $secretary->id) selected @endif>
+                            <option value="{{ $secretary->id }}" @if ($member->secretary_id == $secretary->id) selected @endif>
                                 {{ $secretary->title }}</option>
                         @endforeach
                     </select>

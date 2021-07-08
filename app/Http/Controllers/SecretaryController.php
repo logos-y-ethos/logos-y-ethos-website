@@ -6,10 +6,16 @@ use App\Models\Person;
 use App\Models\Secretary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use App\Http\Controllers\HelperController;
 
 class SecretaryController extends Controller
 {
     //
+    protected $HelperController;
+    public function __construct(HelperController $HelperController)
+    {
+        $this->HelperController = $HelperController;
+    }
 
     public function indexSecretariesWithMembers() {
         $secretaries = Secretary::all();
@@ -32,8 +38,8 @@ class SecretaryController extends Controller
             }else{
                 $pathToMove = base_path() . '/public_html/images/us/';
             }
-            $photo_name = $request->name .' ' . $request->last_name;
-            $request->cover->move($pathToMove, $photo_name);
+            $photo_name = $this->HelperController->eliminar_tildes($request->name) . ' ' . $this->HelperController->eliminar_tildes($request->last_name) . '.' . $request->photo->extension();
+            $request->photo->move($pathToMove, $photo_name);
             $member->photo = $photo_name;
         }
         $member->save();
@@ -58,7 +64,7 @@ class SecretaryController extends Controller
             }else{
                 $pathToMove = base_path() . '/public_html/images/us/';
             }
-            $photo_name = $request->name . ' ' . $request->last_name . '.png';
+            $photo_name = $this->HelperController->eliminar_tildes($request->name) . ' ' . $this->HelperController->eliminar_tildes($request->last_name) . '.' . $request->photo->extension();
             $request->photo->move($pathToMove, $photo_name);
             $member->photo = $photo_name;
         }
